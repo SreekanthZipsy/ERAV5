@@ -1,0 +1,21 @@
+{
+  "content_hash": "fb77c9c127212188bdd75320aa7a10118d2285106062661212b2caa80f44f9be",
+  "doc_ids": [
+    "web_0",
+    "web_1",
+    "web_2",
+    "web_3",
+    "web_4"
+  ],
+  "lane": "web",
+  "metadata": {
+    "path": "web_train_fb77c9c12721.jsonl"
+  },
+  "n_docs": 5,
+  "n_loss_tokens": 67,
+  "n_tokens": 72,
+  "packing_policy": "greedy_concat",
+  "shard_id": "web_train_fb77c9c12721",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

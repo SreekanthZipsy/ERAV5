@@ -1,0 +1,17 @@
+{
+  "content_hash": "60a0b7da3815988eddd15af7551c5f3c7b2f75e3ca694498970657cee6069666",
+  "doc_ids": [
+    "eval_indic_1"
+  ],
+  "lane": "indic",
+  "metadata": {
+    "path": "indic_eval_60a0b7da3815.jsonl"
+  },
+  "n_docs": 1,
+  "n_loss_tokens": 32,
+  "n_tokens": 33,
+  "packing_policy": "greedy_concat",
+  "shard_id": "indic_eval_60a0b7da3815",
+  "split": "eval",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

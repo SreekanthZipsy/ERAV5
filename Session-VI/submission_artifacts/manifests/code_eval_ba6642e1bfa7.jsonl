@@ -1,0 +1,1 @@
+{"doc_id": "eval_swe_1", "lane": "code", "split": "eval", "source": "swe_bench_eval", "quality": 1.0, "token_ids": [2, 303, 65, 304, 305, 220, 306, 79, 307, 308, 3], "loss_mask": [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "token_span_hash": "6c251cc2ab3a9696a0da7f49281421e14304bc51e763bbaddb3b4db74a7c17ac"}

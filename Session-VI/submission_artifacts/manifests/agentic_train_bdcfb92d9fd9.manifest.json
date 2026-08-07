@@ -1,0 +1,19 @@
+{
+  "content_hash": "bdcfb92d9fd97cb2c81793ea97de7b7edf4231033f396ead2e86e8d41d56bea3",
+  "doc_ids": [
+    "agent_0",
+    "agent_1",
+    "agent_2"
+  ],
+  "lane": "agentic",
+  "metadata": {
+    "path": "agentic_train_bdcfb92d9fd9.jsonl"
+  },
+  "n_docs": 3,
+  "n_loss_tokens": 66,
+  "n_tokens": 144,
+  "packing_policy": "structure_preserving",
+  "shard_id": "agentic_train_bdcfb92d9fd9",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

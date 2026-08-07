@@ -1,0 +1,20 @@
+[
+  {
+    "event": "eval_shard_blocked",
+    "shard_or_doc": "eval_swe_1",
+    "split": "eval",
+    "action": "reject_from_loss_batch"
+  },
+  {
+    "event": "eval_shard_blocked",
+    "shard_or_doc": "eval_indic_1",
+    "split": "eval",
+    "action": "reject_from_loss_batch"
+  },
+  {
+    "event": "eval_shard_blocked",
+    "shard_or_doc": "val_mmlu_1",
+    "split": "validation",
+    "action": "reject_from_loss_batch"
+  }
+]

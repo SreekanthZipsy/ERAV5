@@ -1,0 +1,17 @@
+{
+  "content_hash": "459bac3179ec617d570907ad2ec709718b29e31d28f0312ee1535333598abf44",
+  "doc_ids": [
+    "val_mmlu_1"
+  ],
+  "lane": "web",
+  "metadata": {
+    "path": "web_validation_459bac3179ec.jsonl"
+  },
+  "n_docs": 1,
+  "n_loss_tokens": 12,
+  "n_tokens": 13,
+  "packing_policy": "greedy_concat",
+  "shard_id": "web_validation_459bac3179ec",
+  "split": "validation",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

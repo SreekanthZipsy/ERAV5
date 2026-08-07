@@ -1,0 +1,8 @@
+{
+  "fork_ckpt": "ckpt_fork_experiment_a",
+  "branch": "experiment_a",
+  "from_step": 3,
+  "fork_continued_batch": "batch_0003",
+  "main_ledger_len": 12,
+  "after_ckpt": "ckpt_experiment_a_after"
+}

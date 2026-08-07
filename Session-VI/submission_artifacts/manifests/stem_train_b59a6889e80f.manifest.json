@@ -1,0 +1,20 @@
+{
+  "content_hash": "b59a6889e80f420b85c5e92a988a8d1ab831992a68d351f4488953ef1461ff13",
+  "doc_ids": [
+    "stem_0",
+    "stem_1",
+    "stem_2",
+    "stem_3"
+  ],
+  "lane": "stem",
+  "metadata": {
+    "path": "stem_train_b59a6889e80f.jsonl"
+  },
+  "n_docs": 4,
+  "n_loss_tokens": 71,
+  "n_tokens": 75,
+  "packing_policy": "greedy_concat",
+  "shard_id": "stem_train_b59a6889e80f",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

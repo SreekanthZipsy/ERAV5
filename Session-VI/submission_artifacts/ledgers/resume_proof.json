@@ -1,0 +1,8 @@
+{
+  "matched": true,
+  "expected_batch_id": "batch_0006",
+  "actual_batch_id": "batch_0006",
+  "expected_hash": "24e499dee02c984a237cf4944b6415516f8a58877f03a117239933b88e052e49",
+  "actual_hash": "24e499dee02c984a237cf4944b6415516f8a58877f03a117239933b88e052e49",
+  "resume_step": 6
+}

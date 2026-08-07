@@ -1,0 +1,1 @@
+{"doc_id": "val_mmlu_1", "lane": "web", "split": "validation", "source": "mmlu_val", "quality": 1.0, "token_ids": [2, 314, 65, 315, 9, 16, 6, 7, 316, 253, 317, 19, 3], "loss_mask": [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "token_span_hash": "1ca2ebf095591f0b107f124d8bec73fc097e311ed48bea5972e74fd18ab3298a"}

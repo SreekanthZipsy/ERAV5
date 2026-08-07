@@ -1,0 +1,10 @@
+{
+  "batch_hash_next": "d789af3e34a024733dd53c7dc14adbaa979952974077beace168f4ee70f9ece6",
+  "batch_id_next": "batch_0009",
+  "branch": "main",
+  "ledger_offset": 9,
+  "model_path": "/home/ubuntu/ERA5/Session-VI/submission_artifacts/checkpoints/ckpt_step9/model.npz",
+  "parent_checkpoint": null,
+  "step": 9,
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

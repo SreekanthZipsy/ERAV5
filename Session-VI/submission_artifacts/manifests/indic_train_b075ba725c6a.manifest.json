@@ -1,0 +1,21 @@
+{
+  "content_hash": "b075ba725c6a716428cb710853cfdf67baad15df65cb0fb0761166003ad1205e",
+  "doc_ids": [
+    "indic_0",
+    "indic_1",
+    "indic_2",
+    "indic_3",
+    "indic_4"
+  ],
+  "lane": "indic",
+  "metadata": {
+    "path": "indic_train_b075ba725c6a.jsonl"
+  },
+  "n_docs": 5,
+  "n_loss_tokens": 232,
+  "n_tokens": 237,
+  "packing_policy": "greedy_concat",
+  "shard_id": "indic_train_b075ba725c6a",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

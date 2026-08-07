@@ -1,0 +1,17 @@
+{
+  "content_hash": "ba6642e1bfa708281bb55d58ff4c05f85f3066de98dc05b85c0ac8391b18916b",
+  "doc_ids": [
+    "eval_swe_1"
+  ],
+  "lane": "code",
+  "metadata": {
+    "path": "code_eval_ba6642e1bfa7.jsonl"
+  },
+  "n_docs": 1,
+  "n_loss_tokens": 10,
+  "n_tokens": 11,
+  "packing_policy": "best_fit",
+  "shard_id": "code_eval_ba6642e1bfa7",
+  "split": "eval",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

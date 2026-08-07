@@ -1,0 +1,20 @@
+{
+  "content_hash": "c2c0fc6b4bb8dd2da650a105a2cfb610d6d52d746f651e09809e2b48b9c0197b",
+  "doc_ids": [
+    "code_0",
+    "code_1",
+    "code_2",
+    "code_3"
+  ],
+  "lane": "code",
+  "metadata": {
+    "path": "code_train_c2c0fc6b4bb8.jsonl"
+  },
+  "n_docs": 4,
+  "n_loss_tokens": 109,
+  "n_tokens": 113,
+  "packing_policy": "best_fit",
+  "shard_id": "code_train_c2c0fc6b4bb8",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}

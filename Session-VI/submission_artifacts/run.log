@@ -1,0 +1,239 @@
+[EVENT] corpus_written n_docs=27
+[EVENT] tokenizer_frozen hash=3fa89267c0cb1e56 vocab=318
+[PASS] tokenizer_hash_verified
+[EVENT] shards_created n=9
+[PASS] tokenizer_hash_verified
+[PASS] manifests_validated
+[PASS] eval_shard_blocked count=3
+[EVENT] evaluation_data_blocked
+[EVENT] mixture_compiled steps=12
+[EVENT] batches_packed n=12
+[PASS] mixture_schedule_ready
+[PASS] packing_masks_aligned
+[EVENT] opus_decision recorded accept reason_0
+[EVENT] opus_decision recorded accept stem_0
+[EVENT] opus_decision recorded accept web_0
+[EVENT] opus_decision recorded defer web_1
+[EVENT] opus_decision recorded defer web_2
+[EVENT] opus_decision recorded defer indic_0
+[EVENT] opus_decision recorded reject indic_0
+[EVENT] opus_decision recorded floor_override indic_0
+[EVENT] opus_decision recorded accept reason_1
+[EVENT] opus_decision recorded accept stem_1
+[EVENT] opus_decision recorded accept web_3
+[EVENT] opus_decision recorded defer web_4
+[EVENT] opus_decision recorded defer indic_1
+[EVENT] opus_decision recorded reject web_0
+[EVENT] opus_decision recorded floor_override indic_1
+[EVENT] opus_decision recorded accept reason_2
+[EVENT] opus_decision recorded accept stem_2
+[EVENT] opus_decision recorded accept web_1
+[EVENT] opus_decision recorded defer web_2
+[EVENT] opus_decision recorded defer indic_2
+[EVENT] opus_decision recorded reject web_3
+[EVENT] opus_decision recorded floor_override indic_2
+[EVENT] opus_decision recorded accept stem_3
+[EVENT] opus_decision recorded accept web_4
+[EVENT] opus_decision recorded accept indic_3
+[EVENT] opus_decision recorded reject reason_0
+[EVENT] opus_decision recorded reject web_0
+[EVENT] opus_decision recorded reject web_1
+[EVENT] opus_decision recorded accept indic_4
+[EVENT] opus_decision recorded accept web_2
+[EVENT] opus_decision recorded defer reason_1
+[EVENT] opus_decision recorded defer stem_0
+[EVENT] opus_decision recorded reject web_3
+[EVENT] opus_decision recorded reject web_4
+[EVENT] opus_decision recorded accept code_0
+[EVENT] opus_decision recorded defer reason_2
+[EVENT] opus_decision recorded defer stem_1
+[EVENT] opus_decision recorded defer web_0
+[EVENT] opus_decision recorded defer web_1
+[EVENT] opus_decision recorded reject indic_0
+[EVENT] opus_decision recorded floor_override indic_0
+[EVENT] opus_decision recorded accept code_1
+[EVENT] opus_decision recorded defer reason_0
+[EVENT] opus_decision recorded defer stem_2
+[EVENT] opus_decision recorded defer web_2
+[EVENT] opus_decision recorded defer web_3
+[EVENT] opus_decision recorded defer indic_1
+[EVENT] opus_decision recorded reject indic_1
+[EVENT] opus_decision recorded floor_override indic_1
+[EVENT] opus_decision recorded accept code_2
+[EVENT] opus_decision recorded defer reason_1
+[EVENT] opus_decision recorded defer stem_3
+[EVENT] opus_decision recorded defer web_4
+[EVENT] opus_decision recorded defer web_0
+[EVENT] opus_decision recorded reject indic_2
+[EVENT] opus_decision recorded floor_override indic_2
+[EVENT] opus_decision recorded accept code_3
+[EVENT] opus_decision recorded defer reason_2
+[EVENT] opus_decision recorded defer stem_0
+[EVENT] opus_decision recorded defer web_1
+[EVENT] opus_decision recorded defer web_2
+[EVENT] opus_decision recorded reject indic_3
+[EVENT] opus_decision recorded floor_override indic_3
+[EVENT] opus_decision recorded defer indic_4
+[EVENT] opus_decision recorded defer reason_0
+[EVENT] opus_decision recorded defer code_0
+[EVENT] opus_decision recorded defer stem_1
+[EVENT] opus_decision recorded defer web_3
+[EVENT] opus_decision recorded defer web_4
+[EVENT] opus_decision recorded reject web_4
+[EVENT] opus_decision recorded floor_override indic_4
+[EVENT] opus_decision recorded floor_override code_0
+[EVENT] opus_decision recorded defer reason_1
+[EVENT] opus_decision recorded defer code_1
+[EVENT] opus_decision recorded defer stem_2
+[EVENT] opus_decision recorded defer web_0
+[EVENT] opus_decision recorded defer web_1
+[EVENT] opus_decision recorded defer indic_0
+[EVENT] opus_decision recorded reject indic_0
+[EVENT] opus_decision recorded floor_override indic_0
+[EVENT] opus_decision recorded floor_override code_1
+[EVENT] opus_decision recorded defer reason_0
+[EVENT] opus_decision recorded defer reason_2
+[EVENT] opus_decision recorded defer stem_3
+[EVENT] opus_decision recorded defer web_2
+[EVENT] opus_decision recorded defer web_3
+[EVENT] opus_decision recorded reject indic_1
+[EVENT] opus_decision recorded floor_override indic_1
+[PASS] opus_audit_trail
+[EVENT] opus_decisions_recorded n=88
+[EVENT] batch_packed batch_0000 hash=9de4c1946941 stage=B0_foundation
+[EVENT] opus_accept doc=reason_0 score=0.928 reason=proxy_affinity
+[EVENT] opus_accept doc=stem_0 score=0.880 reason=proxy_affinity
+[EVENT] opus_accept doc=web_0 score=0.820 reason=proxy_affinity
+[EVENT] opus_defer doc=web_1 score=0.820 reason=borderline_probe
+[EVENT] opus_defer doc=web_2 score=0.820 reason=borderline_probe
+[EVENT] opus_defer doc=indic_0 score=0.803 reason=borderline_probe
+[EVENT] opus_reject doc=indic_0 score=0.803 reason=forced_tail_reject_for_audit
+[EVENT] opus_floor_override doc=indic_0 score=0.553 reason=protected_floor:0.12
+[EVENT] trained batch_0000 loss=5.7628 useful=26
+[EVENT] batch_packed batch_0001 hash=e0ca564d4a8f stage=B0_foundation
+[EVENT] opus_accept doc=reason_1 score=0.909 reason=proxy_affinity
+[EVENT] opus_accept doc=stem_1 score=0.869 reason=proxy_affinity
+[EVENT] opus_accept doc=web_3 score=0.820 reason=proxy_affinity
+[EVENT] opus_defer doc=web_4 score=0.820 reason=borderline_probe
+[EVENT] opus_defer doc=indic_1 score=0.794 reason=borderline_probe
+[EVENT] opus_reject doc=web_0 score=0.570 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_1 score=0.544 reason=protected_floor:0.12
+[EVENT] trained batch_0001 loss=5.7521 useful=57
+[EVENT] batch_packed batch_0002 hash=fabad6dbdb48 stage=B0_foundation
+[EVENT] opus_accept doc=reason_2 score=0.919 reason=proxy_affinity
+[EVENT] opus_accept doc=stem_2 score=0.833 reason=proxy_affinity
+[EVENT] opus_accept doc=web_1 score=0.820 reason=proxy_affinity
+[EVENT] opus_defer doc=web_2 score=0.820 reason=borderline_probe
+[EVENT] opus_defer doc=indic_2 score=0.812 reason=borderline_probe
+[EVENT] opus_reject doc=web_3 score=0.570 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_2 score=0.562 reason=protected_floor:0.12
+[EVENT] trained batch_0002 loss=5.7418 useful=52
+[PASS] checkpoint_saved ckpt_step3
+[EVENT] batch_packed batch_0003 hash=5987413b0aa5 stage=B0_foundation
+[EVENT] opus_accept doc=stem_3 score=0.880 reason=proxy_affinity
+[EVENT] opus_accept doc=web_4 score=0.820 reason=proxy_affinity
+[EVENT] opus_accept doc=indic_3 score=0.803 reason=proxy_affinity
+[EVENT] opus_reject doc=reason_0 score=0.678 reason=low_proxy_affinity
+[EVENT] opus_reject doc=web_0 score=0.570 reason=low_proxy_affinity
+[EVENT] opus_reject doc=web_1 score=0.570 reason=low_proxy_affinity
+[EVENT] trained batch_0003 loss=5.7119 useful=58
+[EVENT] batch_packed batch_0004 hash=468704914f65 stage=B0_foundation
+[EVENT] opus_accept doc=indic_4 score=0.961 reason=proxy_affinity
+[EVENT] opus_accept doc=web_2 score=0.820 reason=proxy_affinity
+[EVENT] opus_defer doc=reason_1 score=0.659 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_0 score=0.630 reason=borderline_probe
+[EVENT] opus_reject doc=web_3 score=0.570 reason=low_proxy_affinity
+[EVENT] opus_reject doc=web_4 score=0.570 reason=low_proxy_affinity
+[EVENT] trained batch_0004 loss=5.7124 useful=42
+[EVENT] batch_packed batch_0005 hash=49327d4a1c71 stage=B1_skills
+[EVENT] opus_accept doc=code_0 score=0.873 reason=proxy_affinity
+[EVENT] opus_defer doc=reason_2 score=0.669 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_1 score=0.619 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_0 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_1 score=0.570 reason=borderline_probe
+[EVENT] opus_reject doc=indic_0 score=0.553 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_0 score=0.553 reason=protected_floor:0.12
+[EVENT] trained batch_0005 loss=5.7300 useful=54
+[PASS] checkpoint_saved ckpt_step6
+[PASS] checkpoint_saved ckpt_pre_crash_step6 next=batch_0006
+[EVENT] crash_simulated at_step=6
+[EVENT] crash_caught ok
+[EVENT] run_resumed from=ckpt_pre_crash_step6 next_step=6 expected=batch_0006 actual=batch_0006
+[PASS] resume_next_batch_matched
+[EVENT] batch_packed batch_0006 hash=24e499dee02c stage=B1_skills
+[EVENT] opus_accept doc=code_1 score=0.901 reason=proxy_affinity
+[EVENT] opus_defer doc=reason_0 score=0.678 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_2 score=0.583 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_2 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_3 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=indic_1 score=0.544 reason=borderline_probe
+[EVENT] opus_reject doc=indic_1 score=0.544 reason=forced_tail_reject_for_audit
+[EVENT] opus_floor_override doc=indic_1 score=0.544 reason=protected_floor:0.12
+[EVENT] trained batch_0006 loss=5.7276 useful=62
+[EVENT] batch_packed batch_0007 hash=0f2e09ae4f03 stage=B1_skills
+[EVENT] opus_accept doc=code_2 score=0.891 reason=proxy_affinity
+[EVENT] opus_defer doc=reason_1 score=0.659 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_3 score=0.630 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_4 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_0 score=0.570 reason=borderline_probe
+[EVENT] opus_reject doc=indic_2 score=0.562 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_2 score=0.562 reason=protected_floor:0.12
+[EVENT] trained batch_0007 loss=5.8269 useful=62
+[EVENT] batch_packed batch_0008 hash=78bf75175104 stage=B2_lean
+[EVENT] opus_accept doc=code_3 score=0.882 reason=proxy_affinity
+[EVENT] opus_defer doc=reason_2 score=0.669 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_0 score=0.630 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_1 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_2 score=0.570 reason=borderline_probe
+[EVENT] opus_reject doc=indic_3 score=0.553 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_3 score=0.553 reason=protected_floor:0.12
+[EVENT] trained batch_0008 loss=5.7971 useful=67
+[PASS] checkpoint_saved ckpt_step9
+[EVENT] batch_packed batch_0009 hash=d789af3e34a0 stage=B2_lean
+[EVENT] opus_defer doc=indic_4 score=0.711 reason=recently_seen_defer
+[EVENT] opus_defer doc=reason_0 score=0.678 reason=recently_seen_defer
+[EVENT] opus_defer doc=code_0 score=0.623 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_1 score=0.619 reason=borderline_probe
+[EVENT] opus_defer doc=web_3 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_4 score=0.570 reason=borderline_probe
+[EVENT] opus_reject doc=web_4 score=0.570 reason=forced_tail_reject_for_audit
+[EVENT] opus_floor_override doc=indic_4 score=0.711 reason=protected_floor:0.12
+[EVENT] opus_floor_override doc=code_0 score=0.623 reason=protected_floor:0.1
+[EVENT] trained batch_0009 loss=5.1176 useful=57
+[EVENT] batch_packed batch_0010 hash=81f1df93bb3d stage=B2_lean
+[EVENT] opus_defer doc=reason_1 score=0.659 reason=recently_seen_defer
+[EVENT] opus_defer doc=code_1 score=0.651 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_2 score=0.583 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_0 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_1 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=indic_0 score=0.553 reason=borderline_probe
+[EVENT] opus_reject doc=indic_0 score=0.553 reason=forced_tail_reject_for_audit
+[EVENT] opus_floor_override doc=indic_0 score=0.553 reason=protected_floor:0.12
+[EVENT] opus_floor_override doc=code_1 score=0.651 reason=protected_floor:0.1
+[EVENT] trained batch_0010 loss=4.8830 useful=80
+[EVENT] batch_packed batch_0011 hash=8d2caf9086de stage=B3_pre_anneal
+[EVENT] opus_defer doc=reason_0 score=0.678 reason=recently_seen_defer
+[EVENT] opus_defer doc=reason_2 score=0.669 reason=recently_seen_defer
+[EVENT] opus_defer doc=stem_3 score=0.630 reason=recently_seen_defer
+[EVENT] opus_defer doc=web_2 score=0.570 reason=borderline_probe
+[EVENT] opus_defer doc=web_3 score=0.570 reason=borderline_probe
+[EVENT] opus_reject doc=indic_1 score=0.544 reason=low_proxy_affinity
+[EVENT] opus_floor_override doc=indic_1 score=0.544 reason=protected_floor:0.12
+[EVENT] trained batch_0011 loss=4.4515 useful=90
+[PASS] consumption_steps_contiguous_no_skip_no_repeat
+[PASS] learning_ledger_linked
+[EVENT] replay step=0 batch=batch_0000 match=True
+[EVENT] replay step=1 batch=batch_0001 match=True
+[EVENT] replay step=2 batch=batch_0002 match=True
+[EVENT] replay step=3 batch=batch_0003 match=True
+[EVENT] replay step=4 batch=batch_0004 match=True
+[EVENT] replay step=5 batch=batch_0005 match=True
+[PASS] replay_hash_matched
+[EVENT] historical_stream_replayed
+[EVENT] branch_forked source=ckpt_step3 dest=ckpt_fork_experiment_a branch=experiment_a
+[EVENT] branch_forked_complete
+[EVENT] performance_measured useful_tps=9480.6 util=0.789
+[EVENT] performance_measured
+[EVENT] audit_completed
+[PASS] audit_all_requirements
+[EVENT] demo_finished

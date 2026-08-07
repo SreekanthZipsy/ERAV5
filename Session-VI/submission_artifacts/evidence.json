@@ -1,0 +1,95 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "detail": null,
+      "evidence": "manifests/index.json",
+      "requirement": "Tokenizer integrity",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "ledgers/firewall_events.json",
+      "requirement": "Evaluation firewall",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "performance.json",
+      "requirement": "Packing correctness",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "actual_avg": {
+          "code": 0.21294729447305386,
+          "indic": 0.4772156127951166,
+          "reasoning": 0.11102676563202879,
+          "stem": 0.1389732343679712,
+          "web": 0.05983709273182958
+        },
+        "n_batches": 12,
+        "planned_avg": {
+          "agentic": 0.03000000000000001,
+          "code": 0.09999999999999999,
+          "indic": 0.12000000000000004,
+          "reasoning": 0.17223840637826107,
+          "stem": 0.17594091818923163,
+          "web": 0.40182067543250727
+        }
+      },
+      "evidence": "ledgers/mixture_report.json",
+      "requirement": "Mixture compliance",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "ledgers/opus_decisions.jsonl",
+      "requirement": "OPUS audit trail",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "ledgers/resume_proof.json",
+      "requirement": "Crash recovery",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "ledgers/replay_proof.json",
+      "requirement": "Replay",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "ledgers/learning.jsonl",
+      "requirement": "Learning trace",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "performance.json",
+      "requirement": "Throughput",
+      "result": "PASS"
+    },
+    {
+      "detail": null,
+      "evidence": "checkpoints/",
+      "requirement": "Fork",
+      "result": "PASS"
+    }
+  ],
+  "raw": {
+    "eval_firewall": true,
+    "fork": true,
+    "learning": true,
+    "mixture": true,
+    "opus": true,
+    "packing": true,
+    "replay": true,
+    "resume": true,
+    "throughput": true,
+    "tokenizer_integrity": true
+  },
+  "schema": "era5-tdes-evidence-v1"
+}

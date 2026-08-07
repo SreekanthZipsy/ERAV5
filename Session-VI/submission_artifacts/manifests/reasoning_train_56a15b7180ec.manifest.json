@@ -1,0 +1,19 @@
+{
+  "content_hash": "56a15b7180ecadbcee3e48d33d9689ee11b4be559de67f13807f14dcc981a44d",
+  "doc_ids": [
+    "reason_0",
+    "reason_1",
+    "reason_2"
+  ],
+  "lane": "reasoning",
+  "metadata": {
+    "path": "reasoning_train_56a15b7180ec.jsonl"
+  },
+  "n_docs": 3,
+  "n_loss_tokens": 88,
+  "n_tokens": 98,
+  "packing_policy": "structure_preserving",
+  "shard_id": "reasoning_train_56a15b7180ec",
+  "split": "train",
+  "tokenizer_hash": "3fa89267c0cb1e56036cafe681c4220d0a98860adf3fc2bf1097afffeb2744c6"
+}
