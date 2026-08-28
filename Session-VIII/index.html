@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Attention Bill — a chronological map</title>
+    <meta
+      name="description"
+      content="Every major attention mechanism in launch order: the problem it answered, what it buys, what it costs, and when you would actually pick it."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="hero-kicker">Session VIII · ERA · Attention variants</p>
+      <h1>The Attention Bill</h1>
+      <p class="hero-lead">
+        Vanilla attention was not wrong — it was
+        <strong>expensive</strong>. Everything after it is somebody looking at
+        that bill and trying to pay less of it. Laid out by
+        <strong>launch date</strong>, not by family, you can watch the field
+        change its mind.
+      </p>
+      <div class="hero-meta">
+        <span class="chip"><b id="count">—</b> mechanisms</span>
+        <span class="chip"><b id="class-count">—</b> from class</span>
+        <span class="chip">+ bonus papers dated from arXiv</span>
+        <span class="chip">Netlify-ready static site</span>
+      </div>
+      <div class="story-strip" aria-label="What the timeline shows">
+        <div class="story-card">
+          <div class="n">01 · 2017</div>
+          <h3>Exactness</h3>
+          <p>Pay n². Softmax over every pair. Position as an afterthought.</p>
+        </div>
+        <div class="story-card">
+          <div class="n">02 · 2019–20</div>
+          <h3>Memory & edges</h3>
+          <p>MQA, sparse patterns, windows, linear state — shrink the matrix.</p>
+        </div>
+        <div class="story-card">
+          <div class="n">03 · 2021–23</div>
+          <h3>Length</h3>
+          <p>RoPE, ALiBi, sinks, YaRN — survive past training L.</p>
+        </div>
+        <div class="story-card">
+          <div class="n">04 · 2024–25</div>
+          <h3>Memory again</h3>
+          <p>MLA, gated delta, native sparse — the serving bill returns.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="demo-panel" id="playground">
+      <div class="demo">
+        <h2>Start here: scaled dot-product</h2>
+        <p class="lead">
+          Click a query token. The heatmap is causal softmax attention over a
+          tiny deterministic embedding — not a trained model — so you can see the
+          <em>shape</em> of the bill. Nothing later makes sense without this.
+        </p>
+        <div class="demo-controls">
+          <label>
+            Sentence
+            <select id="sentence">
+              <option value="cat">The cat sat on the mat</option>
+              <option value="code">def add(a, b)</option>
+              <option value="short">Hello world</option>
+            </select>
+          </label>
+          <label>
+            Compare bill at n =
+            <select id="bill-n">
+              <option value="128">128</option>
+              <option value="1024" selected>1,024</option>
+              <option value="8192">8,192</option>
+              <option value="100000">100,000</option>
+              <option value="1000000">1,000,000</option>
+            </select>
+          </label>
+          <button type="button" id="open-standard">Jump to timeline card</button>
+        </div>
+        <div class="tokens" id="tokens"></div>
+        <div class="matrix-wrap">
+          <div class="matrix-block">
+            <h3>Full causal weight matrix</h3>
+            <div class="attn-grid" id="attn-matrix"></div>
+          </div>
+          <div class="matrix-block">
+            <h3>Selected query → keys</h3>
+            <div class="attn-grid" id="focus-row"></div>
+          </div>
+        </div>
+        <div class="bill-meter" id="bill-readout"></div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <aside class="side">
+        <h2>Filter</h2>
+        <div class="filter-row">
+          <button type="button" data-filter="all" class="active">All (date order)</button>
+          <button type="button" data-filter="class">Covered in class</button>
+          <button type="button" data-filter="bonus">Bonus only</button>
+          <button type="button" data-filter="exactness">Era: exactness</button>
+          <button type="button" data-filter="compute">Era: compute / IO</button>
+          <button type="button" data-filter="memory">Era: memory</button>
+          <button type="button" data-filter="length">Era: length</button>
+        </div>
+        <p class="hint">
+          Expand any card for problem → answer → buys / gives up → when to pick
+          it. Dates cite arXiv first versions unless noted.
+        </p>
+      </aside>
+      <main>
+        <div class="timeline" id="timeline"></div>
+      </main>
+    </div>
+
+    <section class="essay" id="what-the-timeline-shows">
+      <article>
+        <h2>What the timeline actually shows</h2>
+        <p>
+          As a <strong>list</strong>, these look like interchangeable “attention
+          upgrades.” As a <strong>timeline</strong>, they are a mood swing.
+        </p>
+        <p>
+          <strong>2017</strong> wants exactness: every query scores every key,
+          softmax makes them compete, multi-head buys diversity. Position is
+          bolted on (sinusoids, then learned tables) so the permutation-invariant
+          mixer can tell “bank₂” from “bank₂₀.”
+        </p>
+        <p>
+          <strong>2019–2020</strong> looks at the receipt. Decode bandwidth
+          invents MQA. Long documents invent sparse edges and sliding windows.
+          Softmax itself gets accused: drop it, regroup the products, keep a
+          fixed d×d state — linear attention. Exact access is traded for a bill
+          that does not explode with n.
+        </p>
+        <p>
+          <strong>2021</strong> tries to buy back what linearization lost (delta
+          rule / fast weights) while the mainstream stays on softmax and instead
+          fixes <em>position</em>: RoPE for relative geometry, ALiBi for
+          train-short/test-long. The obsession shifts from “how do I mix?” to
+          “how do I still mean something at length L I never trained?”
+        </p>
+        <p>
+          <strong>2022–2023</strong> is infrastructure and length patches.
+          FlashAttention pays less HBM without changing the math. GQA softens
+          MQA’s quality hit. NTK-aware and YaRN stretch RoPE. Attention sinks
+          admit that naive windows delete the numerical drain the model learned
+          to use. The field wants <em>length</em> without re-paying full
+          pretrain.
+        </p>
+        <p>
+          <strong>2024–2025</strong> the memory bill returns with a vengeance —
+          not because researchers forgot length, but because serving at long
+          context made KV cache the product. MLA compresses what you store. NSA
+          (then DSA) adds trained sparse selection on compressed history. Gated
+          DeltaNet puts control back into fixed-size state. DroPE asks whether
+          RoPE was only a training scaffold all along.
+        </p>
+        <p>
+          Once you see that oscillation —
+          <strong>exactness → memory → length → memory again</strong> — you can
+          guess what comes next: hybrids that keep a little exact softmax for
+          the needles, a compressed or recurrent state for the haystack, and
+          position schemes that do not hold the context window hostage. A
+          mechanism that is right for a 2K chatbot and wrong for a 1M agent is
+          not a bad mechanism. It is a trade on a dated bill.
+        </p>
+      </article>
+    </section>
+
+    <footer class="site">
+      <p>
+        Built for ERA Session VIII. Date sources and methodology are in
+        <code>README.md</code>. Interactive demo uses toy hashes, not trained
+        weights — for shape intuition only.
+      </p>
+    </footer>
+
+    <script src="js/mechanisms.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
