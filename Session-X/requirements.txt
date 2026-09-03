@@ -1,0 +1,5 @@
+torch>=2.0
+matplotlib>=3.7
+ipykernel>=6.0
+nbclient>=0.10
+nbformat>=5.0

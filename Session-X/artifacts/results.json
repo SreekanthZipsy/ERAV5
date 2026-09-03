@@ -1,0 +1,973 @@
+{
+  "shapes": {
+    "tokens": [
+      2,
+      24
+    ],
+    "n_tensors_reported": 103,
+    "rows": [
+      {
+        "name": "param.tok_emb.weight",
+        "shape": [
+          50,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.pos_emb.weight",
+        "shape": [
+          32,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.ln1.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.ln1.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.qkv.weight",
+        "shape": [
+          192,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.proj.weight",
+        "shape": [
+          64,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.ln2.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.ln2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.mlp.0.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.mlp.0.bias",
+        "shape": [
+          256
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.mlp.2.weight",
+        "shape": [
+          64,
+          256
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.0.mlp.2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.ln1.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.ln1.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.qkv.weight",
+        "shape": [
+          192,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.proj.weight",
+        "shape": [
+          64,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.ln2.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.ln2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.mlp.0.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.mlp.0.bias",
+        "shape": [
+          256
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.mlp.2.weight",
+        "shape": [
+          64,
+          256
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.blocks.1.mlp.2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.ln_f.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "param.ln_f.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "trainable parameter dimensions"
+      },
+      {
+        "name": "tokens",
+        "shape": [
+          2,
+          24
+        ],
+        "meaning": "(B,T): batch examples \u00d7 token positions"
+      },
+      {
+        "name": "positions",
+        "shape": [
+          24
+        ],
+        "meaning": "(T): absolute position index"
+      },
+      {
+        "name": "token_embeddings",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): example \u00d7 position \u00d7 embedding channel"
+      },
+      {
+        "name": "position_embeddings",
+        "shape": [
+          24,
+          64
+        ],
+        "meaning": "(T,C): position \u00d7 embedding channel; broadcast over B"
+      },
+      {
+        "name": "residual.input",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): residual stream entering transformer"
+      },
+      {
+        "name": "block0.ln1",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): normalized residual channels"
+      },
+      {
+        "name": "block0.qkv",
+        "shape": [
+          2,
+          24,
+          192
+        ],
+        "meaning": "(B,T,3C): packed query, key, value channels"
+      },
+      {
+        "name": "block0.q",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked query channels"
+      },
+      {
+        "name": "block0.k",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked key channels"
+      },
+      {
+        "name": "block0.v",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked value channels"
+      },
+      {
+        "name": "block0.q_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 query position \u00d7 head channel"
+      },
+      {
+        "name": "block0.k_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 key position \u00d7 head channel"
+      },
+      {
+        "name": "block0.v_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 value position \u00d7 head channel"
+      },
+      {
+        "name": "block0.scores",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): example \u00d7 head \u00d7 query position \u00d7 key position"
+      },
+      {
+        "name": "block0.causal_mask",
+        "shape": [
+          1,
+          1,
+          24,
+          24
+        ],
+        "meaning": "(1,1,T,T): broadcast mask; 1 means key is visible"
+      },
+      {
+        "name": "block0.masked_scores",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): attention scores after causal masking"
+      },
+      {
+        "name": "block0.attention",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): probability over key positions"
+      },
+      {
+        "name": "block0.context_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): weighted value vectors per head"
+      },
+      {
+        "name": "block0.context",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): attention heads concatenated"
+      },
+      {
+        "name": "block0.attention_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): projected attention update"
+      },
+      {
+        "name": "block0.residual_attn",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): residual after attention update"
+      },
+      {
+        "name": "block0.ln2",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): normalized channels entering MLP"
+      },
+      {
+        "name": "block0.mlp_expanded",
+        "shape": [
+          2,
+          24,
+          256
+        ],
+        "meaning": "(B,T,4C): expanded MLP channels"
+      },
+      {
+        "name": "block0.mlp_activated",
+        "shape": [
+          2,
+          24,
+          256
+        ],
+        "meaning": "(B,T,4C): GELU activations"
+      },
+      {
+        "name": "block0.mlp_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): projected MLP update"
+      },
+      {
+        "name": "block0.residual_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): residual stream leaving block"
+      },
+      {
+        "name": "block1.ln1",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): normalized residual channels"
+      },
+      {
+        "name": "block1.qkv",
+        "shape": [
+          2,
+          24,
+          192
+        ],
+        "meaning": "(B,T,3C): packed query, key, value channels"
+      },
+      {
+        "name": "block1.q",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked query channels"
+      },
+      {
+        "name": "block1.k",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked key channels"
+      },
+      {
+        "name": "block1.v",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): unpacked value channels"
+      },
+      {
+        "name": "block1.q_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 query position \u00d7 head channel"
+      },
+      {
+        "name": "block1.k_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 key position \u00d7 head channel"
+      },
+      {
+        "name": "block1.v_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): example \u00d7 head \u00d7 value position \u00d7 head channel"
+      },
+      {
+        "name": "block1.scores",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): example \u00d7 head \u00d7 query position \u00d7 key position"
+      },
+      {
+        "name": "block1.causal_mask",
+        "shape": [
+          1,
+          1,
+          24,
+          24
+        ],
+        "meaning": "(1,1,T,T): broadcast mask; 1 means key is visible"
+      },
+      {
+        "name": "block1.masked_scores",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): attention scores after causal masking"
+      },
+      {
+        "name": "block1.attention",
+        "shape": [
+          2,
+          2,
+          24,
+          24
+        ],
+        "meaning": "(B,H,T,T): probability over key positions"
+      },
+      {
+        "name": "block1.context_heads",
+        "shape": [
+          2,
+          2,
+          24,
+          32
+        ],
+        "meaning": "(B,H,T,D): weighted value vectors per head"
+      },
+      {
+        "name": "block1.context",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): attention heads concatenated"
+      },
+      {
+        "name": "block1.attention_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): projected attention update"
+      },
+      {
+        "name": "block1.residual_attn",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): residual after attention update"
+      },
+      {
+        "name": "block1.ln2",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): normalized channels entering MLP"
+      },
+      {
+        "name": "block1.mlp_expanded",
+        "shape": [
+          2,
+          24,
+          256
+        ],
+        "meaning": "(B,T,4C): expanded MLP channels"
+      },
+      {
+        "name": "block1.mlp_activated",
+        "shape": [
+          2,
+          24,
+          256
+        ],
+        "meaning": "(B,T,4C): GELU activations"
+      },
+      {
+        "name": "block1.mlp_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): projected MLP update"
+      },
+      {
+        "name": "block1.residual_out",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): residual stream leaving block"
+      },
+      {
+        "name": "final_norm",
+        "shape": [
+          2,
+          24,
+          64
+        ],
+        "meaning": "(B,T,C): final normalized hidden states"
+      },
+      {
+        "name": "logits",
+        "shape": [
+          2,
+          24,
+          50
+        ],
+        "meaning": "(B,T,V): score for every vocabulary item"
+      },
+      {
+        "name": "shift_logits",
+        "shape": [
+          2,
+          23,
+          50
+        ],
+        "meaning": "(B,T-1,V): predictions aligned to next-token labels"
+      },
+      {
+        "name": "shift_labels",
+        "shape": [
+          2,
+          23
+        ],
+        "meaning": "(B,T-1): next-token target ids"
+      },
+      {
+        "name": "flat_logits",
+        "shape": [
+          46,
+          50
+        ],
+        "meaning": "(B\u00b7(T-1),V): rows consumed by cross entropy"
+      },
+      {
+        "name": "flat_labels",
+        "shape": [
+          46
+        ],
+        "meaning": "(B\u00b7(T-1)): target id for each CE row"
+      },
+      {
+        "name": "token_nll",
+        "shape": [
+          46
+        ],
+        "meaning": "(B\u00b7(T-1)): one negative log-likelihood per target"
+      },
+      {
+        "name": "loss",
+        "shape": [],
+        "meaning": "(): scalar mean over all next-token targets"
+      },
+      {
+        "name": "grad.tok_emb.weight",
+        "shape": [
+          50,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.pos_emb.weight",
+        "shape": [
+          32,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.ln1.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.ln1.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.qkv.weight",
+        "shape": [
+          192,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.proj.weight",
+        "shape": [
+          64,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.ln2.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.ln2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.mlp.0.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.mlp.0.bias",
+        "shape": [
+          256
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.mlp.2.weight",
+        "shape": [
+          64,
+          256
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.0.mlp.2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.ln1.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.ln1.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.qkv.weight",
+        "shape": [
+          192,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.proj.weight",
+        "shape": [
+          64,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.ln2.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.ln2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.mlp.0.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.mlp.0.bias",
+        "shape": [
+          256
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.mlp.2.weight",
+        "shape": [
+          64,
+          256
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.blocks.1.mlp.2.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.ln_f.weight",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      },
+      {
+        "name": "grad.ln_f.bias",
+        "shape": [
+          64
+        ],
+        "meaning": "same dimensions as parameter; d(loss)/d(parameter)"
+      }
+    ],
+    "n_valid": 46,
+    "n_params": 104832
+  },
+  "grad_check": {
+    "toy": {
+      "analytic": 1.0659999999999998,
+      "numerical": 1.0660000000000251,
+      "abs_err": 2.531308496145357e-14,
+      "formula": "L=(w*x - t)^2,  dL/dw = 2(wx-t)x"
+    },
+    "tinylm_ce": {
+      "analytic": -0.008702265594504531,
+      "numerical": -0.008702248968317505,
+      "abs_err": 1.6626187026094752e-08,
+      "rel_err": 1.9105584454459958e-06,
+      "param": "blocks.0.mlp.0.weight[0,0]",
+      "eps": 0.001,
+      "dtype": "float64",
+      "original_weight": 0.03620165213942528,
+      "loss_plus": 3.4793816259573758,
+      "loss_minus": 3.4793990304553124,
+      "central_difference": "(L(w+eps)-L(w-eps))/(2*eps)"
+    }
+  },
+  "accum": {
+    "final_token_eval_wrong_model": 0.2445347943613606,
+    "final_token_eval_right_model": 0.16345038337092246,
+    "final_short_eval_wrong_model": 0.19091301411390305,
+    "final_short_eval_right_model": 0.19349637627601624,
+    "mean_objective_gap": 0.1001079052266094,
+    "lengths": [
+      16,
+      16,
+      48,
+      48
+    ],
+    "valid_tokens": [
+      15,
+      15,
+      47,
+      47
+    ],
+    "note": "Wrong = equal vote per microbatch mean; Right = sum(nll)/sum(n)."
+  },
+  "grad_norm": {
+    "finding": {
+      "warning_step": 45,
+      "grad_norm_before": 1.1647721777819924,
+      "grad_norm_at_warning": 92.18402219631392,
+      "probe_loss_before": 2.532770872116089,
+      "probe_loss_at_warning_pre_update": 2.5099000930786133,
+      "probe_loss_next_step": 3.049417018890381,
+      "note": "The raw/probe loss was measured before the update. A controlled 80x backward-scale bug made ||g|| jump at step s; its effect on probe loss could only be observed at step s+1."
+    },
+    "controlled_backward_scale_step": 45,
+    "backward_scale": 80.0
+  },
+  "mfu": {
+    "n_params": 815872,
+    "tokens": 10080,
+    "wall_s": 0.614716945681721,
+    "approx_flops": 53307555840.0,
+    "achieved_tflops": 0.08671886502312366,
+    "mfu_pct_vs_nominal_cpu_fp32": 27.099645319726147,
+    "peak_cpu_fp32_tflops": 0.32,
+    "peak_derivation": "2 cores * 2 AVX-512 FMA units * 16 fp32 lanes * 2 flop/FMA * 2.5 GHz",
+    "why_not_40pct": "Tiny matrices do not sustain peak SIMD throughput; eager Python and many small operators add overhead; Adam is memory-heavy; attention and CE are not fused; the virtualized CPU may be scheduled or AVX-downclocked.",
+    "caveat": "Nominal CPU peak is an architectural upper bound; this is an MFU proxy."
+  },
+  "float_0_1": {
+    "fp32": {
+      "format": "fp32",
+      "hex": "0x3DCCCCCD",
+      "bits": "00111101110011001100110011001101",
+      "sign": "0",
+      "exponent_bits": "01111011",
+      "exponent_biased": 123,
+      "exponent_unbiased": -4,
+      "mantissa_bits": "10011001100110011001101",
+      "approx_value": 0.10000000149011612,
+      "layout": "1 sign | 8 exponent (bias 127) | 23 mantissa"
+    },
+    "bf16": {
+      "format": "bf16",
+      "hex": "0x3DCD",
+      "bits": "0011110111001101",
+      "sign": "0",
+      "exponent_bits": "01111011",
+      "exponent_biased": 123,
+      "exponent_unbiased": -4,
+      "mantissa_bits": "1001101",
+      "approx_value": 0.10009765625,
+      "layout": "1 sign | 8 exponent (bias 127) | 7 mantissa",
+      "note": "Same exponent range as fp32; coarser resolution than fp16."
+    },
+    "fp8_e4m3": {
+      "format": "fp8_e4m3",
+      "hex": "0x1D",
+      "bits": "00011101",
+      "sign": "0",
+      "exponent_bits": "0011",
+      "exponent_biased": 3,
+      "exponent_unbiased": -4,
+      "mantissa_bits": "101",
+      "approx_value": 0.1015625,
+      "rel_error_pct": 1.5624999999999944,
+      "layout": "1 sign | 4 exponent (bias 7) | 3 mantissa"
+    }
+  },
+  "train_dtype_choice": "bf16_compute_fp32_master"
+}
