@@ -17,37 +17,36 @@ Outputs:
 |------|----------|
 | `artifacts/results.json` | All numeric results |
 | `figures/bias_correction.png` | First 20 Adam steps ± bias correction |
-| `figures/update_ratio_warmup.png` | \|\|ΔW\|\|/\|\|W\|\| vs warmup |
+| `figures/update_ratio_warmup.png` | `‖ΔW‖ / ‖W‖` vs warmup |
 | `figures/cosine_vs_wsd.png` | Loss + LR for cosine vs WSD |
 | `figures/lr_sweep_width.png` | Loss vs LR at widths 256 / 512 / 1024 |
 
 Support code: `adam_lab.py` (math + tiny LM + schedules + sweeps), `run_session_xi.py` (driver).
 
-Hyperparameters used unless noted: Adam/AdamW β₁=0.9, β₂=0.999, ε=1e-8.
+Hyperparameters used unless noted: Adam/AdamW β₁ = 0.9, β₂ = 0.999, ε = 1e-8.
 
 ---
 
 ## 1. Reproduce Adam by hand
 
-One scalar weight \(w_0=0.5\), five gradients
+One scalar weight `w0 = 0.5`, five gradients, learning rate `η = 1e-3`:
 
-\[
-g \in \{1.0,\ -0.5,\ 0.25,\ 2.0,\ -1.5\},
-\quad \eta=10^{-3}.
-\]
+```text
+g ∈ {1.0, -0.5, 0.25, 2.0, -1.5}
+```
 
 Update (with bias correction):
 
-\[
-\begin{aligned}
-m_t &= \beta_1 m_{t-1} + (1-\beta_1) g_t \\
-v_t &= \beta_2 v_{t-1} + (1-\beta_2) g_t^2 \\
-\hat m_t &= m_t / (1-\beta_1^t) \\
-\hat v_t &= v_t / (1-\beta_2^t) \\
-\Delta_t &= \eta\,\hat m_t / (\sqrt{\hat v_t}+\varepsilon) \\
-w_t &= w_{t-1} - \Delta_t
-\end{aligned}
-\]
+```text
+m_t     = β1 * m_{t-1} + (1 - β1) * g_t
+v_t     = β2 * v_{t-1} + (1 - β2) * g_t²
+
+m̂_t     = m_t / (1 - β1^t)
+v̂_t     = v_t / (1 - β2^t)
+
+step_t  = η * m̂_t / (√v̂_t + ε)
+w_t     = w_{t-1} - step_t
+```
 
 ### Hand table (matches `torch.optim.Adam` in float64)
 
@@ -59,28 +58,28 @@ w_t &= w_{t-1} - \Delta_t
 | 4 | 2.00 | 0.25490000 | 0.00530894 | 0.74120384 | 1.32922770 | 0.00064289 | 0.49775034 |
 | 5 | −1.50 | 0.07941000 | 0.00755363 | 0.19391468 | 1.51375084 | 0.00015761 | 0.49759273 |
 
-**Max \|hand − PyTorch\|** over \(m,v,\hat m,\hat v,\mathrm{step},w\): **0** (exact agreement to float64).
+**Max |hand − PyTorch|** over `m`, `v`, `m̂`, `v̂`, `step`, `w`: **0** (exact agreement to float64).
 
-Adam here is momentum (direction memory in \(m\)) plus adaptive scale (RMS in \(v\)) — the “GPS + speedometer” picture from class.
+Adam here is momentum (direction memory in `m`) plus adaptive scale (RMS in `v`) — the “GPS + speedometer” picture from class.
 
 ---
 
 ## 2. Disable bias correction — first 20 steps
 
-Same five gradients cycled; η=1e−2 so early steps are visible.
+Same five gradients cycled; η = 1e−2 so early steps are visible.
 
 ![Bias correction](figures/bias_correction.png)
 
-Without \(\hat m,\hat v\), early \(v\) is tiny → \(\sqrt{v}\) blows up the step. With correction, step 1 is exactly \(\eta\) for \(g=1\) (classic Adam warm-start).
+Without `m̂` / `v̂`, early `v` is tiny → `√v` blows up the step. With correction, step 1 is exactly `η` for `g = 1` (classic Adam warm-start).
 
 | | |
 |--|--|
-| Relative \|Δstep\| at **t=20** (cycling grads) | **~5.2×** — still huge |
-| β₁ bias ~99% gone | \(t \approx 44\) |
-| β₂ bias ~99% gone | \(t \approx 4603\) |
-| Steps until rel \|Δstep\| stays &lt;1% (const \(g=1\)) | **3925** |
+| Relative \|Δstep\| at **t = 20** (cycling grads) | **~5.2×** — still huge |
+| β₁ bias ~99% gone | t ≈ 44 |
+| β₂ bias ~99% gone | t ≈ 4603 |
+| Steps until rel \|Δstep\| stays &lt; 1% (const `g = 1`) | **3925** |
 
-**Verdict:** within the assigned 20-step window the difference **does not** stop mattering. It stops mattering on the **β₂ timescale** — thousands of steps for β₂=0.999 — not on the plot window. Bias correction is an early-training fix; \(v\)’s correction is the long pole.
+**Verdict:** within the assigned 20-step window the difference **does not** stop mattering. It stops mattering on the **β₂ timescale** — thousands of steps for β₂ = 0.999 — not on the plot window. Bias correction is an early-training fix; `v`’s correction is the long pole.
 
 ---
 
@@ -88,11 +87,11 @@ Without \(\hat m,\hat v\), early \(v\) is tiny → \(\sqrt{v}\) blows up the ste
 
 For every named parameter, each step:
 
-\[
-r = \|\Delta W\|_2 / \|W\|_2
-\]
+```text
+r = ‖ΔW‖₂ / ‖W‖₂
+```
 
-Tiny LM (d=64, 2 layers), linear warmup **20** steps to η=3e−3, then hold.
+Tiny LM (d = 64, 2 layers), linear warmup **20** steps to η = 3e−3, then hold.
 
 ![Update ratio](figures/update_ratio_warmup.png)
 
@@ -101,12 +100,12 @@ Median ratio **rises with LR during warmup** (~7.5e−3 → ~4.4e−2 by step 19
 | | |
 |--|--|
 | Scheduled warmup | 20 |
-| Step where warmup **stops changing** the ratio | **22** (first post-warmup step where median \(\|\Delta r\|\) falls back to typical mid-warmup churn) |
+| Step where warmup **stops changing** the ratio | **22** (first post-warmup step where median \|Δr\| falls back to typical mid-warmup churn) |
 
 Per-layer snapshot at that step (sample):
 
-| Parameter | \|\|ΔW\|\|/\|\|W\|\| |
-|-----------|-------------------|
+| Parameter | `‖ΔW‖ / ‖W‖` |
+|-----------|--------------|
 | `tok_emb.weight` | 4.89e−2 |
 | `pos_emb.weight` | 2.87e−2 |
 | `blocks.0.qkv.weight` | 3.82e−2 |
@@ -119,7 +118,7 @@ Per-layer snapshot at that step (sample):
 
 ## 4. Cosine vs WSD — 300 steps, report at 200
 
-Same TinyLM (d=128), same seed, patterned next-token data, AdamW, η_max=3e−3, warmup=30.
+Same TinyLM (d = 128), same seed, patterned next-token data, AdamW, η_max = 3e−3, warmup = 30.
 
 - **Cosine:** warmup → cosine anneal to 5% of η_max over 300 steps.
 - **WSD:** warmup → **stable** η_max until step **240** (80% of run) → linear decay.
@@ -147,9 +146,9 @@ Same architecture family, widths **256 / 512 / 1024**, identical steps (100), wa
 
 | Width | Best η | Mean loss (last 20/100) |
 |-------|--------|-------------------------|
-| 256 | **1×10⁻⁴** | 2.130 |
-| 512 | **5×10⁻⁵** | 1.789 |
-| 1024 | **3×10⁻⁴** | 1.042 |
+| 256 | **1e-4** | 2.130 |
+| 512 | **5e-5** | 1.789 |
+| 1024 | **3e-4** | 1.042 |
 
 256→512 looks roughly **1/width** (1e−4 → 5e−5). 1024’s minimum jumps **up**, not down — the “haywire” curve class warned about when μP transfer is **not** on.
 
@@ -157,11 +156,11 @@ Same architecture family, widths **256 / 512 / 1024**, identical steps (100), wa
 
 | Transfer rule | η(4096) |
 |---------------|---------|
-| Log-log least-squares fit of the three η* | ~6×10⁻⁴ |
-| 1/width from 1024 | ~7.5×10⁻⁵ |
-| μP-style “reuse proxy η*” from 1024 | 3×10⁻⁴ |
+| Log-log least-squares fit of the three η* | ~6e-4 |
+| 1/width from 1024 | ~7.5e-5 |
+| μP-style “reuse proxy η*” from 1024 | 3e-4 |
 
-**Choice I would actually start with: ~5×10⁻⁵–1×10⁻⁴**, with a short re-sweep — not the raw fit.
+**Choice I would actually start with: ~5e-5 to 1e-4**, with a short re-sweep — not the raw fit.
 
 **Confidence: low.** Reasons:
 
@@ -175,7 +174,7 @@ So: treat 4096 as “start near the 512 optimum (~5e−5) and sweep a factor of 
 
 ## Files
 
-```
+```text
 Session-XI/
   adam_lab.py           # Adam hand math, TinyLM, schedules, sweeps
   run_session_xi.py     # End-to-end runner
@@ -189,6 +188,6 @@ Session-XI/
 
 1. Hand Adam = PyTorch Adam when bias correction and dtypes match.
 2. Bias correction is essential early; it stops mattering on the **β₂** clock (~10³ steps), not by step 20.
-3. Warmup’s fingerprint is a rising \|\|ΔW\|\|/\|\|W\|\|; once LR plateaus, warmup stops driving that ratio (~step 20–22 here).
+3. Warmup’s fingerprint is a rising `‖ΔW‖ / ‖W‖`; once LR plateaus, warmup stops driving that ratio (~step 20–22 here).
 4. Mid-run (step 200) cosine looked better; WSD’s bet is the late drop — guts required.
 5. Width→LR without μP is unreliable; tune every width before comparing anything.
