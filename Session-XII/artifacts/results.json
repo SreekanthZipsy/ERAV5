@@ -1,0 +1,454 @@
+{
+  "demo_32gpu": {
+    "dp": {
+      "num_params": 230464,
+      "world_size": 32,
+      "per_gpu_bytes": 3687424,
+      "params_bytes": 460928,
+      "grads_bytes": 460928,
+      "optim_bytes": 2765568,
+      "comm_bytes": 921856,
+      "wall_ms": 314.656027010642,
+      "compute_fraction": 0.8843093838872303,
+      "mean_loss": 4.158120840787888,
+      "notes": "Full params+grads+optim on every GPU. Cheapest comm, fattest memory.",
+      "rank0_step_ms": 263.9752260001842
+    },
+    "zero1": {
+      "num_params": 230464,
+      "world_size": 32,
+      "per_gpu_bytes": 1008280.0,
+      "params_bytes": 460928,
+      "grads_bytes": 460928,
+      "optim_bytes": 86424.0,
+      "comm_bytes": 1382784,
+      "wall_ms": 255.77273601084016,
+      "compute_fraction": 0.8359534018371761,
+      "mean_loss": 4.160129696130753,
+      "notes": "Optimizer (12B/param) sharded. Still full model+grads. Saves ~12\u03a8(1-1/N).",
+      "rank0_step_ms": 209.49684700462967
+    },
+    "zero2": {
+      "num_params": 230464,
+      "world_size": 32,
+      "per_gpu_bytes": 561756.0,
+      "params_bytes": 460928,
+      "grads_bytes": 14404.0,
+      "optim_bytes": 86424.0,
+      "comm_bytes": 921856,
+      "wall_ms": 314.9310449953191,
+      "compute_fraction": 0.8843093838872303,
+      "mean_loss": 4.1629641354084015,
+      "notes": "Optimizer + grads sharded. Full params. Reduce-scatter grads.",
+      "rank0_step_ms": 292.7312130050268
+    },
+    "zero3": {
+      "num_params": 230464,
+      "world_size": 32,
+      "per_gpu_bytes": 115232.0,
+      "params_bytes": 14404.0,
+      "grads_bytes": 14404.0,
+      "optim_bytes": 86424.0,
+      "comm_bytes": 1382784,
+      "wall_ms": 234.93556599714793,
+      "compute_fraction": 0.8359534018371761,
+      "mean_loss": 4.158254832029343,
+      "notes": "Everything sharded. All-gather params to compute. Highest comm, lowest memory.",
+      "rank0_step_ms": 213.9374329999555
+    }
+  },
+  "lecture_30b": {
+    "8": {
+      "dp": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 335.27612686157227,
+        "per_gpu_GiB": 447.0348358154297,
+        "cluster_GiB": 3576.2786865234375,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero1": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 41.90951585769653,
+        "per_gpu_GiB": 153.66822481155396,
+        "cluster_GiB": 1229.3457984924316,
+        "comm_GiB_per_step": 167.63806343078613
+      },
+      "zero2": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 6.984919309616089,
+        "optim_GiB": 41.90951585769653,
+        "per_gpu_GiB": 104.77378964424133,
+        "cluster_GiB": 838.1903171539307,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero3": {
+        "params_GiB": 6.984919309616089,
+        "grads_GiB": 6.984919309616089,
+        "optim_GiB": 41.90951585769653,
+        "per_gpu_GiB": 55.87935447692871,
+        "cluster_GiB": 447.0348358154297,
+        "comm_GiB_per_step": 167.63806343078613
+      }
+    },
+    "32": {
+      "dp": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 335.27612686157227,
+        "per_gpu_GiB": 447.0348358154297,
+        "cluster_GiB": 14305.11474609375,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero1": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 10.477378964424133,
+        "per_gpu_GiB": 122.23608791828156,
+        "cluster_GiB": 3911.5548133850098,
+        "comm_GiB_per_step": 167.63806343078613
+      },
+      "zero2": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 1.7462298274040222,
+        "optim_GiB": 10.477378964424133,
+        "per_gpu_GiB": 68.10296326875687,
+        "cluster_GiB": 2179.2948246002197,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero3": {
+        "params_GiB": 1.7462298274040222,
+        "grads_GiB": 1.7462298274040222,
+        "optim_GiB": 10.477378964424133,
+        "per_gpu_GiB": 13.969838619232178,
+        "cluster_GiB": 447.0348358154297,
+        "comm_GiB_per_step": 167.63806343078613
+      }
+    },
+    "64": {
+      "dp": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 335.27612686157227,
+        "per_gpu_GiB": 447.0348358154297,
+        "cluster_GiB": 28610.2294921875,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero1": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 55.87935447692871,
+        "optim_GiB": 5.238689482212067,
+        "per_gpu_GiB": 116.99739843606949,
+        "cluster_GiB": 7487.833499908447,
+        "comm_GiB_per_step": 167.63806343078613
+      },
+      "zero2": {
+        "params_GiB": 55.87935447692871,
+        "grads_GiB": 0.8731149137020111,
+        "optim_GiB": 5.238689482212067,
+        "per_gpu_GiB": 61.99115887284279,
+        "cluster_GiB": 3967.4341678619385,
+        "comm_GiB_per_step": 111.75870895385742
+      },
+      "zero3": {
+        "params_GiB": 0.8731149137020111,
+        "grads_GiB": 0.8731149137020111,
+        "optim_GiB": 5.238689482212067,
+        "per_gpu_GiB": 6.984919309616089,
+        "cluster_GiB": 447.0348358154297,
+        "comm_GiB_per_step": 167.63806343078613
+      }
+    }
+  },
+  "scale_rows": [
+    {
+      "params_B": 1.0,
+      "world_size": 8,
+      "stage": "dp",
+      "per_gpu_GiB": 14.901161193847656,
+      "cluster_GiB": 119.20928955078125,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 8,
+      "stage": "zero1",
+      "per_gpu_GiB": 5.122274160385132,
+      "cluster_GiB": 40.978193283081055,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 8,
+      "stage": "zero2",
+      "per_gpu_GiB": 3.4924596548080444,
+      "cluster_GiB": 27.939677238464355,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 8,
+      "stage": "zero3",
+      "per_gpu_GiB": 1.862645149230957,
+      "cluster_GiB": 14.901161193847656,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 32,
+      "stage": "dp",
+      "per_gpu_GiB": 14.901161193847656,
+      "cluster_GiB": 476.837158203125,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 32,
+      "stage": "zero1",
+      "per_gpu_GiB": 4.0745362639427185,
+      "cluster_GiB": 130.385160446167,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 32,
+      "stage": "zero2",
+      "per_gpu_GiB": 2.270098775625229,
+      "cluster_GiB": 72.64316082000732,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 32,
+      "stage": "zero3",
+      "per_gpu_GiB": 0.46566128730773926,
+      "cluster_GiB": 14.901161193847656,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 64,
+      "stage": "dp",
+      "per_gpu_GiB": 14.901161193847656,
+      "cluster_GiB": 953.67431640625,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 64,
+      "stage": "zero1",
+      "per_gpu_GiB": 3.8999132812023163,
+      "cluster_GiB": 249.59444999694824,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 64,
+      "stage": "zero2",
+      "per_gpu_GiB": 2.066371962428093,
+      "cluster_GiB": 132.24780559539795,
+      "comm_GiB": 3.725290298461914
+    },
+    {
+      "params_B": 1.0,
+      "world_size": 64,
+      "stage": "zero3",
+      "per_gpu_GiB": 0.23283064365386963,
+      "cluster_GiB": 14.901161193847656,
+      "comm_GiB": 5.587935447692871
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 8,
+      "stage": "dp",
+      "per_gpu_GiB": 104.3081283569336,
+      "cluster_GiB": 834.4650268554688,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 8,
+      "stage": "zero1",
+      "per_gpu_GiB": 35.85591912269592,
+      "cluster_GiB": 286.8473529815674,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 8,
+      "stage": "zero2",
+      "per_gpu_GiB": 24.44721758365631,
+      "cluster_GiB": 195.5777406692505,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 8,
+      "stage": "zero3",
+      "per_gpu_GiB": 13.0385160446167,
+      "cluster_GiB": 104.3081283569336,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 32,
+      "stage": "dp",
+      "per_gpu_GiB": 104.3081283569336,
+      "cluster_GiB": 3337.860107421875,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 32,
+      "stage": "zero1",
+      "per_gpu_GiB": 28.52175384759903,
+      "cluster_GiB": 912.696123123169,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 32,
+      "stage": "zero2",
+      "per_gpu_GiB": 15.890691429376602,
+      "cluster_GiB": 508.50212574005127,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 32,
+      "stage": "zero3",
+      "per_gpu_GiB": 3.259629011154175,
+      "cluster_GiB": 104.3081283569336,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 64,
+      "stage": "dp",
+      "per_gpu_GiB": 104.3081283569336,
+      "cluster_GiB": 6675.72021484375,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 64,
+      "stage": "zero1",
+      "per_gpu_GiB": 27.299392968416214,
+      "cluster_GiB": 1747.1611499786377,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 64,
+      "stage": "zero2",
+      "per_gpu_GiB": 14.46460373699665,
+      "cluster_GiB": 925.7346391677856,
+      "comm_GiB": 26.0770320892334
+    },
+    {
+      "params_B": 7.0,
+      "world_size": 64,
+      "stage": "zero3",
+      "per_gpu_GiB": 1.6298145055770874,
+      "cluster_GiB": 104.3081283569336,
+      "comm_GiB": 39.1155481338501
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 8,
+      "stage": "dp",
+      "per_gpu_GiB": 447.0348358154297,
+      "cluster_GiB": 3576.2786865234375,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 8,
+      "stage": "zero1",
+      "per_gpu_GiB": 153.66822481155396,
+      "cluster_GiB": 1229.3457984924316,
+      "comm_GiB": 167.63806343078613
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 8,
+      "stage": "zero2",
+      "per_gpu_GiB": 104.77378964424133,
+      "cluster_GiB": 838.1903171539307,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 8,
+      "stage": "zero3",
+      "per_gpu_GiB": 55.87935447692871,
+      "cluster_GiB": 447.0348358154297,
+      "comm_GiB": 167.63806343078613
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 32,
+      "stage": "dp",
+      "per_gpu_GiB": 447.0348358154297,
+      "cluster_GiB": 14305.11474609375,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 32,
+      "stage": "zero1",
+      "per_gpu_GiB": 122.23608791828156,
+      "cluster_GiB": 3911.5548133850098,
+      "comm_GiB": 167.63806343078613
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 32,
+      "stage": "zero2",
+      "per_gpu_GiB": 68.10296326875687,
+      "cluster_GiB": 2179.2948246002197,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 32,
+      "stage": "zero3",
+      "per_gpu_GiB": 13.969838619232178,
+      "cluster_GiB": 447.0348358154297,
+      "comm_GiB": 167.63806343078613
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 64,
+      "stage": "dp",
+      "per_gpu_GiB": 447.0348358154297,
+      "cluster_GiB": 28610.2294921875,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 64,
+      "stage": "zero1",
+      "per_gpu_GiB": 116.99739843606949,
+      "cluster_GiB": 7487.833499908447,
+      "comm_GiB": 167.63806343078613
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 64,
+      "stage": "zero2",
+      "per_gpu_GiB": 61.99115887284279,
+      "cluster_GiB": 3967.4341678619385,
+      "comm_GiB": 111.75870895385742
+    },
+    {
+      "params_B": 30.0,
+      "world_size": 64,
+      "stage": "zero3",
+      "per_gpu_GiB": 6.984919309616089,
+      "cluster_GiB": 447.0348358154297,
+      "comm_GiB": 167.63806343078613
+    }
+  ]
+}
