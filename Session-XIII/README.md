@@ -59,7 +59,7 @@ The model is small enough that I did not `torch.compile` it (fair comparison: al
 
 ## Reversible variants (what I implemented)
 
-Every variant uses the same block $f(p) = \mathrm{Attn}(\mathrm{LN}_1 p) + \mathrm{MLP}(\mathrm{LN}_2(p + \mathrm{Attn}(\mathrm{LN}_1 p)))$;
+Every variant uses the same block $f(p) = \mathrm{Attn}(\mathrm{LN_1}\, p) + \mathrm{MLP}(\mathrm{LN_2}(p + \mathrm{Attn}(\mathrm{LN_1}\, p)))$;
 only the rule that carries state across depth changes (from *Reversing Large Language Models for
 Efficient Training and Fine-Tuning*, arXiv 2512.02056, discussed in class):
 
@@ -69,7 +69,7 @@ Efficient Training and Fine-Tuning*, arXiv 2512.02056, discussed in class):
 | midpoint | $p_{l+1} = p_{l-1} + 2h\,f(p_l)$ | $p_{l-1} = p_{l+1} - 2h\,f(p_l)$ |
 | midpoint_a | $p_{l+1} = a\,p_{l-1} + (1-a)\,p_l + h\,f(p_l)$, with $a = \pm 1 + U(-\tfrac{1}{2},\tfrac{1}{2})$ fixed per layer | $p_{l-1} = \bigl(p_{l+1} - (1-a)\,p_l - h\,f(p_l)\bigr)/a$ |
 | leapfrog | $p_{l+1} = 2p_l - p_{l-1} + h^2 f(p_l)$ | $p_{l-1} = 2p_l - p_{l+1} + h^2 f(p_l)$ |
-| euler | $q_{l+1} = q_l + \mathrm{Attn}(\mathrm{LN}_1 p_l)$, then $p_{l+1} = p_l + \mathrm{MLP}(\mathrm{LN}_2 q_{l+1})$ | undo MLP step, then attention step |
+| euler | $q_{l+1} = q_l + \mathrm{Attn}(\mathrm{LN_1}\, p_l)$, then $p_{l+1} = p_l + \mathrm{MLP}(\mathrm{LN_2}\, q_{l+1})$ | undo MLP step, then attention step |
 
 `model.py::RevStack` is a custom `autograd.Function`: the forward runs all layers under `no_grad` and
 keeps only the last two states; the backward walks layers in reverse, recomputes $f$ for one layer
