@@ -1,0 +1,33 @@
+| run | mode | h | batch | tok/step | lr | final train loss | final val loss | tok/s (steady) | peak alloc GB | peak reserved GB | time (min) |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| baseline_b16 | baseline | - | 16 | 16384 | 0.0015 | 3.9868 | 3.9910 | 77313 | 3.95 | 4.08 | 10.8 |
+| baseline_maxb48 | baseline | - | 48 | 49152 | 0.0026 | 4.1241 | 4.1092 | 79745 | 11.25 | 11.96 | 10.4 |
+| euler_b16 | euler | - | 16 | 16384 | 0.0015 | 4.4508 | 4.4734 | 58977 | 1.92 | 2.25 | 14.2 |
+| leapfrog_b16 | leapfrog | 1.0 | 16 | 16384 | 0.0015 | 4.1125 | 4.1128 | 57096 | 1.92 | 2.25 | 14.6 |
+| leapfrog_maxb384 | leapfrog | 1.0 | 384 | 393216 | 0.006 | 6.3309 | 6.3307 | 56774 | 13.88 | 14.37 | 14.7 |
+| leapfrog_maxb384_lr1.2e-2 | leapfrog | 1.0 | 384 | 393216 | 0.012 | 6.4773 | 6.4736 | 57324 | 13.88 | 14.37 | 14.6 |
+| midpoint_a_b16 | midpoint_a | 1.0 | 16 | 16384 | 0.0015 | 3.9986 | 4.0031 | 55511 | 1.85 | 2.18 | 15.0 |
+| midpoint_a_b16_autograd | midpoint_a | 1.0 | 16 | 16384 | 0.0015 | 4.0073 | 4.0118 | 71433 | 3.94 | 4.23 | 11.7 |
+| midpoint_a_maxb456 | midpoint_a | 1.0 | 456 | 466944 | 0.006 | 6.3812 | 6.3820 | 55443 | 13.07 | 14.35 | 15.0 |
+| midpoint_b16 | midpoint | 1.0 | 16 | 16384 | 0.0015 | 4.2147 | 4.2174 | 57828 | 1.92 | 2.25 | 14.5 |
+
+| sweep run | state | val loss @5M | tok/s | recon err @ step 300 |
+|---|---|---:|---:|---:|
+| baseline | fixed-point | 6.1137 | 78671 | - |
+| euler | fixed-point | 6.1430 | 58703 | 5.9e-10 |
+| leapfrog_h0.5 | fixed-point | 6.1605 | 57472 | 5.7e-10 |
+| leapfrog_h1.0 | fixed-point | 6.0796 | 57336 | 5.1e-10 |
+| midpoint_a_h0.5 | float | 6.0259 | 55541 | 1.3e+00 |
+| midpoint_a_h1.0 | float | 6.0097 | 55551 | 7.0e+00 |
+| midpoint_h0.25 | fixed-point | 6.3790 | 58404 | 6.0e-10 |
+| midpoint_h0.5 | fixed-point | 6.3435 | 57867 | 6.5e-10 |
+| midpoint_h1.0 | fixed-point | 6.0425 | 57844 | 5.9e-10 |
+| euler | float | 6.1440 | 60544 | 4.4e+00 |
+| leapfrog_h0.5 | float | 6.1569 | 55600 | 3.9e+00 |
+| leapfrog_h1.0 | float | 6.0811 | 55553 | 3.3e+01 |
+| midpoint_a_h0.5 | float | 6.0259 | 55541 | 1.3e+00 |
+| midpoint_a_h1.0 | float | 6.0097 | 55551 | 7.0e+00 |
+| midpoint_h0.25 | float | 6.2226 | 55960 | 3.2e+00 |
+| midpoint_h0.5 | float | 6.2460 | 55720 | 9.4e+00 |
+| midpoint_h1.0 | float | 6.0268 | 55596 | 8.6e+00 |
+

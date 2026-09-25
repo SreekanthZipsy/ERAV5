@@ -1,0 +1,14 @@
+midpoint_a+chunkedCE 8 1.16GB 55304 tok/s
+midpoint_a+chunkedCE 16 1.30GB 54389 tok/s
+midpoint_a+chunkedCE 32 1.84GB 55967 tok/s
+midpoint_a+chunkedCE 64 2.67GB 56353 tok/s
+midpoint_a+chunkedCE 128 4.25GB 55913 tok/s
+midpoint_a+chunkedCE 256 9.13GB 55770 tok/s
+midpoint_a+chunkedCE 512 OOM
+midpoint_a+chunkedCE 384 12.50GB 55983 tok/s
+midpoint_a+chunkedCE 448 13.91GB 55788 tok/s
+midpoint_a+chunkedCE 480 14.19GB 55789 tok/s
+midpoint_a+chunkedCE 496 OOM
+midpoint_a+chunkedCE 488 OOM
+midpoint_a+chunkedCE 484 13.95GB 55866 tok/s
+midpoint_a+chunkedCE: max batch 484 (OOM at 488)

@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+
+
+fetched 40000 docs for tokenizer training in 7s
+tokenizer trained in 26s, vocab=8192
+    52.0M tokens, 42000 docs, 53s
+    54.5M tokens, 44000 docs, 54s
+done: train=52.0M val=1.0M docs=44000 chars/token=3.88 in 54s

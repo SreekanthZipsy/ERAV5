@@ -1,0 +1,464 @@
+{
+  "baseline": {
+    "max_batch": 56,
+    "first_oom": 60,
+    "probes": [
+      {
+        "mode": "baseline",
+        "batch": 8,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 2.132382869720459,
+        "peak_reserved_gb": 2.392578125,
+        "step_s": 0.10835027694702148,
+        "tok_s": 75606.63646485673,
+        "loss": 7.925054550170898
+      },
+      {
+        "mode": "baseline",
+        "batch": 16,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 3.949582576751709,
+        "peak_reserved_gb": 4.080078125,
+        "step_s": 0.20738768577575684,
+        "tok_s": 79001.79771385083,
+        "loss": 7.930368423461914
+      },
+      {
+        "mode": "baseline",
+        "batch": 32,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 7.599851131439209,
+        "peak_reserved_gb": 8.01171875,
+        "step_s": 0.40140557289123535,
+        "tok_s": 81633.14665508842,
+        "loss": 7.876588821411133
+      },
+      {
+        "mode": "baseline",
+        "batch": 48,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 11.247678279876709,
+        "peak_reserved_gb": 11.95703125,
+        "step_s": 0.5964395999908447,
+        "tok_s": 82409.01509684212,
+        "loss": 7.881338119506836
+      },
+      {
+        "mode": "baseline",
+        "batch": 56,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 13.075681209564209,
+        "peak_reserved_gb": 13.921875,
+        "step_s": 0.6896069049835205,
+        "tok_s": 83154.61980672937,
+        "loss": 7.882610321044922
+      }
+    ]
+  },
+  "baseline+chunkedCE": {
+    "max_batch": 96,
+    "first_oom": 100,
+    "probes": [
+      {
+        "mode": "baseline",
+        "batch": 8,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 2.132382869720459,
+        "peak_reserved_gb": 2.392578125,
+        "step_s": 0.10823345184326172,
+        "tok_s": 75688.24481236398,
+        "loss": 7.9250407218933105
+      },
+      {
+        "mode": "baseline",
+        "batch": 16,
+        "ce_chunks": 2,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 3.211670398712158,
+        "peak_reserved_gb": 3.455078125,
+        "step_s": 0.21762967109680176,
+        "tok_s": 75283.85223130899,
+        "loss": 7.930354595184326
+      },
+      {
+        "mode": "baseline",
+        "batch": 32,
+        "ce_chunks": 4,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 5.372620105743408,
+        "peak_reserved_gb": 5.63671875,
+        "step_s": 0.42348623275756836,
+        "tok_s": 77376.77748489779,
+        "loss": 7.87658166885376
+      },
+      {
+        "mode": "baseline",
+        "batch": 64,
+        "ce_chunks": 8,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 9.696350574493408,
+        "peak_reserved_gb": 10.013671875,
+        "step_s": 0.8355288505554199,
+        "tok_s": 78436.54944582078,
+        "loss": 7.864473819732666
+      },
+      {
+        "mode": "baseline",
+        "batch": 96,
+        "ce_chunks": 12,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 14.020813941955566,
+        "peak_reserved_gb": 14.28515625,
+        "step_s": 1.2614495754241943,
+        "tok_s": 77929.39322758326,
+        "loss": 7.863405227661133
+      }
+    ]
+  },
+  "midpoint_a": {
+    "max_batch": 112,
+    "first_oom": 116,
+    "probes": [
+      {
+        "mode": "midpoint_a",
+        "batch": 8,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.042895793914795,
+        "peak_reserved_gb": 1.1640625,
+        "step_s": 0.14910340309143066,
+        "tok_s": 54941.73727863636,
+        "loss": 7.91423225402832
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 16,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.822497844696045,
+        "peak_reserved_gb": 2.177734375,
+        "step_s": 0.2842283248901367,
+        "tok_s": 57643.79748687235,
+        "loss": 7.941058158874512
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 32,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 3.381579875946045,
+        "peak_reserved_gb": 4.212890625,
+        "step_s": 0.5607614517211914,
+        "tok_s": 58434.82981831663,
+        "loss": 7.883445739746094
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 64,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 6.499072551727295,
+        "peak_reserved_gb": 8.298828125,
+        "step_s": 1.112891435623169,
+        "tok_s": 58888.04415437234,
+        "loss": 7.873851776123047
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 96,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 9.616199493408203,
+        "peak_reserved_gb": 12.384765625,
+        "step_s": 1.683654546737671,
+        "tok_s": 58387.27439098389,
+        "loss": 7.872239112854004
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 112,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 11.175037384033203,
+        "peak_reserved_gb": 14.423828125,
+        "step_s": 1.9705314636230469,
+        "tok_s": 58201.5573550564,
+        "loss": 7.866964340209961
+      }
+    ]
+  },
+  "midpoint_a+chunkedCE": {
+    "max_batch": 484,
+    "first_oom": 488,
+    "probes": [
+      {
+        "mode": "midpoint_a",
+        "batch": 8,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.042895793914795,
+        "peak_reserved_gb": 1.1640625,
+        "step_s": 0.14812636375427246,
+        "tok_s": 55304.13217723854,
+        "loss": 7.91424560546875
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 16,
+        "ce_chunks": 2,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.0836701393127441,
+        "peak_reserved_gb": 1.302734375,
+        "step_s": 0.3012359142303467,
+        "tok_s": 54389.26511090445,
+        "loss": 7.941023349761963
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 32,
+        "ce_chunks": 4,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.2140936851501465,
+        "peak_reserved_gb": 1.837890625,
+        "step_s": 0.5854873657226562,
+        "tok_s": 55967.04885263419,
+        "loss": 7.883447170257568
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 64,
+        "ce_chunks": 8,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 2.0558905601501465,
+        "peak_reserved_gb": 2.673828125,
+        "step_s": 1.1629605293273926,
+        "tok_s": 56352.72938962362,
+        "loss": 7.873843193054199
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 128,
+        "ce_chunks": 16,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 3.7505311965942383,
+        "peak_reserved_gb": 4.251953125,
+        "step_s": 2.3442232608795166,
+        "tok_s": 55912.76316865135,
+        "loss": 7.876816749572754
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 256,
+        "ce_chunks": 32,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 7.130108833312988,
+        "peak_reserved_gb": 9.12890625,
+        "step_s": 4.700438976287842,
+        "tok_s": 55770.11026468585,
+        "loss": 7.853939056396484
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 384,
+        "ce_chunks": 48,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 10.511273384094238,
+        "peak_reserved_gb": 12.5,
+        "step_s": 7.023801803588867,
+        "tok_s": 55983.35644936381,
+        "loss": 7.856463432312012
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 448,
+        "ce_chunks": 56,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 12.201703071594238,
+        "peak_reserved_gb": 13.90625,
+        "step_s": 8.22310471534729,
+        "tok_s": 55788.174403738616,
+        "loss": 7.858147144317627
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 480,
+        "ce_chunks": 60,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 13.047955513000488,
+        "peak_reserved_gb": 14.1875,
+        "step_s": 8.810409307479858,
+        "tok_s": 55788.55452069741,
+        "loss": 7.859066009521484
+      },
+      {
+        "mode": "midpoint_a",
+        "batch": 484,
+        "ce_chunks": 60,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 13.154248237609863,
+        "peak_reserved_gb": 13.953125,
+        "step_s": 8.871564626693726,
+        "tok_s": 55865.68106698302,
+        "loss": 7.858597278594971
+      }
+    ]
+  },
+  "leapfrog+chunkedCE": {
+    "max_batch": 412,
+    "first_oom": 416,
+    "probes": [
+      {
+        "mode": "leapfrog",
+        "batch": 8,
+        "ce_chunks": 1,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.073840618133545,
+        "peak_reserved_gb": 1.3046875,
+        "step_s": 0.1442737579345703,
+        "tok_s": 56780.94282201451,
+        "loss": 7.934253215789795
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 16,
+        "ce_chunks": 2,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.1500763893127441,
+        "peak_reserved_gb": 1.5390625,
+        "step_s": 0.29365086555480957,
+        "tok_s": 55794.14850027727,
+        "loss": 7.934548377990723
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 32,
+        "ce_chunks": 4,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 1.4392523765563965,
+        "peak_reserved_gb": 1.580078125,
+        "step_s": 0.5709240436553955,
+        "tok_s": 57394.67511334741,
+        "loss": 7.870171546936035
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 64,
+        "ce_chunks": 8,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 2.5188422203063965,
+        "peak_reserved_gb": 2.849609375,
+        "step_s": 1.1300849914550781,
+        "tok_s": 57992.0983780317,
+        "loss": 7.849911689758301
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 128,
+        "ce_chunks": 16,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 4.678022384643555,
+        "peak_reserved_gb": 5.388671875,
+        "step_s": 2.2666006088256836,
+        "tok_s": 57827.567631294274,
+        "loss": 7.851513385772705
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 256,
+        "ce_chunks": 32,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 8.996382713317871,
+        "peak_reserved_gb": 10.251953125,
+        "step_s": 4.5202317237854,
+        "tok_s": 57993.48706408162,
+        "loss": 7.835714817047119
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 384,
+        "ce_chunks": 48,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 13.314743041992188,
+        "peak_reserved_gb": 14.326171875,
+        "step_s": 6.9303693771362305,
+        "tok_s": 56738.10133371056,
+        "loss": 7.831723213195801
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 400,
+        "ce_chunks": 50,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 13.854538440704346,
+        "peak_reserved_gb": 14.337890625,
+        "step_s": 7.304875373840332,
+        "tok_s": 56072.140733136745,
+        "loss": 7.834193706512451
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 408,
+        "ce_chunks": 51,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 14.124435901641846,
+        "peak_reserved_gb": 14.33203125,
+        "step_s": 7.623861312866211,
+        "tok_s": 54800.57714257265,
+        "loss": 7.83439826965332
+      },
+      {
+        "mode": "leapfrog",
+        "batch": 412,
+        "ce_chunks": 51,
+        "n_layer": 10,
+        "params_m": 21.249792,
+        "peak_alloc_gb": 14.259384632110596,
+        "peak_reserved_gb": 14.423828125,
+        "step_s": 7.777822732925415,
+        "tok_s": 54242.429338746115,
+        "loss": 7.8333258628845215
+      }
+    ]
+  }
+}

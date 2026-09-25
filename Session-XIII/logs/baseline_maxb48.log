@@ -1,0 +1,206 @@
+[baseline_maxb48] params=21.25M (non-emb 17.71M) steps=1017 tok/step=49152 lr=0.0026 h=0.5
+[baseline_maxb48] step 5/1017 loss 8.4881 tok/s 73642 mem 11.25GB
+[baseline_maxb48] step 10/1017 loss 8.2048 tok/s 77432 mem 11.25GB
+[baseline_maxb48] step 15/1017 loss 7.7742 tok/s 78734 mem 11.25GB
+[baseline_maxb48] step 20/1017 loss 7.3629 tok/s 79345 mem 11.25GB
+[baseline_maxb48] step 25/1017 loss 7.1775 val 7.1255 tok/s 79733 mem 11.25GB
+[baseline_maxb48] step 30/1017 loss 7.0630 tok/s 79964 mem 11.25GB
+[baseline_maxb48] step 35/1017 loss 6.9888 tok/s 80087 mem 11.25GB
+[baseline_maxb48] step 40/1017 loss 6.8434 tok/s 80142 mem 11.25GB
+[baseline_maxb48] step 45/1017 loss 6.7681 tok/s 80157 mem 11.25GB
+[baseline_maxb48] step 50/1017 loss 6.5919 val 6.6208 tok/s 80186 mem 11.25GB
+[baseline_maxb48] step 55/1017 loss 6.5841 tok/s 80203 mem 11.25GB
+[baseline_maxb48] step 60/1017 loss 6.5591 tok/s 80194 mem 11.25GB
+[baseline_maxb48] step 65/1017 loss 6.4067 tok/s 80174 mem 11.25GB
+[baseline_maxb48] step 70/1017 loss 6.3665 tok/s 80175 mem 11.25GB
+[baseline_maxb48] step 75/1017 loss 6.3670 val 6.3122 tok/s 80177 mem 11.25GB
+[baseline_maxb48] step 80/1017 loss 6.2972 tok/s 80172 mem 11.25GB
+[baseline_maxb48] step 85/1017 loss 6.2380 tok/s 80183 mem 11.25GB
+[baseline_maxb48] step 90/1017 loss 6.2023 tok/s 80197 mem 11.25GB
+[baseline_maxb48] step 95/1017 loss 6.1322 tok/s 80204 mem 11.25GB
+[baseline_maxb48] step 100/1017 loss 6.1820 val 6.1540 tok/s 80206 mem 11.25GB
+[baseline_maxb48] step 105/1017 loss 6.1924 tok/s 80206 mem 11.25GB
+[baseline_maxb48] step 110/1017 loss 6.0747 tok/s 80204 mem 11.25GB
+[baseline_maxb48] step 115/1017 loss 6.0575 tok/s 80205 mem 11.25GB
+[baseline_maxb48] step 120/1017 loss 6.0159 tok/s 80198 mem 11.25GB
+[baseline_maxb48] step 125/1017 loss 5.9936 val 6.0068 tok/s 80182 mem 11.25GB
+[baseline_maxb48] step 130/1017 loss 5.9875 tok/s 80173 mem 11.25GB
+[baseline_maxb48] step 135/1017 loss 5.9407 tok/s 80171 mem 11.25GB
+[baseline_maxb48] step 140/1017 loss 5.9083 tok/s 80165 mem 11.25GB
+[baseline_maxb48] step 145/1017 loss 5.8795 tok/s 80157 mem 11.25GB
+[baseline_maxb48] step 150/1017 loss 5.9194 val 5.8858 tok/s 80147 mem 11.25GB
+[baseline_maxb48] step 155/1017 loss 5.8753 tok/s 80143 mem 11.25GB
+[baseline_maxb48] step 160/1017 loss 5.8023 tok/s 80133 mem 11.25GB
+[baseline_maxb48] step 165/1017 loss 5.8139 tok/s 80127 mem 11.25GB
+[baseline_maxb48] step 170/1017 loss 5.7611 tok/s 80124 mem 11.25GB
+[baseline_maxb48] step 175/1017 loss 5.7528 val 5.7828 tok/s 80120 mem 11.25GB
+[baseline_maxb48] step 180/1017 loss 5.7158 tok/s 80110 mem 11.25GB
+[baseline_maxb48] step 185/1017 loss 5.7368 tok/s 80111 mem 11.25GB
+[baseline_maxb48] step 190/1017 loss 5.6724 tok/s 80108 mem 11.25GB
+[baseline_maxb48] step 195/1017 loss 5.7045 tok/s 80102 mem 11.25GB
+[baseline_maxb48] step 200/1017 loss 5.6695 val 5.6707 tok/s 80100 mem 11.25GB
+[baseline_maxb48] step 205/1017 loss 5.6565 tok/s 80101 mem 11.25GB
+[baseline_maxb48] step 210/1017 loss 5.6025 tok/s 80100 mem 11.25GB
+[baseline_maxb48] step 215/1017 loss 5.5686 tok/s 80099 mem 11.25GB
+[baseline_maxb48] step 220/1017 loss 5.6399 tok/s 80094 mem 11.25GB
+[baseline_maxb48] step 225/1017 loss 5.5545 val 5.5865 tok/s 80094 mem 11.25GB
+[baseline_maxb48] step 230/1017 loss 5.5711 tok/s 80092 mem 11.25GB
+[baseline_maxb48] step 235/1017 loss 5.5945 tok/s 80091 mem 11.25GB
+[baseline_maxb48] step 240/1017 loss 5.5529 tok/s 80084 mem 11.25GB
+[baseline_maxb48] step 245/1017 loss 5.5100 tok/s 80075 mem 11.25GB
+[baseline_maxb48] step 250/1017 loss 5.5235 val 5.5082 tok/s 80071 mem 11.25GB
+[baseline_maxb48] step 255/1017 loss 5.4716 tok/s 80071 mem 11.25GB
+[baseline_maxb48] step 260/1017 loss 5.4595 tok/s 80065 mem 11.25GB
+[baseline_maxb48] step 265/1017 loss 5.4603 tok/s 80060 mem 11.25GB
+[baseline_maxb48] step 270/1017 loss 5.4195 tok/s 80057 mem 11.25GB
+[baseline_maxb48] step 275/1017 loss 5.3998 val 5.3986 tok/s 80055 mem 11.25GB
+[baseline_maxb48] step 280/1017 loss 5.3877 tok/s 80056 mem 11.25GB
+[baseline_maxb48] step 285/1017 loss 5.3888 tok/s 80056 mem 11.25GB
+[baseline_maxb48] step 290/1017 loss 5.3526 tok/s 80055 mem 11.25GB
+[baseline_maxb48] step 295/1017 loss 5.2875 tok/s 80052 mem 11.25GB
+[baseline_maxb48] step 300/1017 loss 5.3404 val 5.3386 tok/s 80051 mem 11.25GB
+[baseline_maxb48] step 305/1017 loss 5.3204 tok/s 80050 mem 11.25GB
+[baseline_maxb48] step 310/1017 loss 5.3007 tok/s 80049 mem 11.25GB
+[baseline_maxb48] step 315/1017 loss 5.3030 tok/s 80047 mem 11.25GB
+[baseline_maxb48] step 320/1017 loss 5.2649 tok/s 80043 mem 11.25GB
+[baseline_maxb48] step 325/1017 loss 5.2349 val 5.2461 tok/s 80043 mem 11.25GB
+[baseline_maxb48] step 330/1017 loss 5.1992 tok/s 80040 mem 11.25GB
+[baseline_maxb48] step 335/1017 loss 5.1547 tok/s 80034 mem 11.25GB
+[baseline_maxb48] step 340/1017 loss 5.1823 tok/s 80032 mem 11.25GB
+[baseline_maxb48] step 345/1017 loss 5.1700 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 350/1017 loss 5.1680 val 5.1746 tok/s 80032 mem 11.25GB
+[baseline_maxb48] step 355/1017 loss 5.1150 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 360/1017 loss 5.1055 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 365/1017 loss 5.1436 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 370/1017 loss 5.0788 tok/s 80029 mem 11.25GB
+[baseline_maxb48] step 375/1017 loss 5.1208 val 5.1125 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 380/1017 loss 5.1018 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 385/1017 loss 5.0119 tok/s 80026 mem 11.25GB
+[baseline_maxb48] step 390/1017 loss 5.0199 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 395/1017 loss 5.0530 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 400/1017 loss 5.0560 val 5.0336 tok/s 80025 mem 11.25GB
+[baseline_maxb48] step 405/1017 loss 5.0224 tok/s 80025 mem 11.25GB
+[baseline_maxb48] step 410/1017 loss 5.0542 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 415/1017 loss 5.0112 tok/s 80026 mem 11.25GB
+[baseline_maxb48] step 420/1017 loss 4.9446 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 425/1017 loss 5.0119 val 4.9731 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 430/1017 loss 5.0276 tok/s 80029 mem 11.25GB
+[baseline_maxb48] step 435/1017 loss 4.9188 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 440/1017 loss 4.9701 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 445/1017 loss 4.8593 tok/s 80029 mem 11.25GB
+[baseline_maxb48] step 450/1017 loss 4.8873 val 4.9089 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 455/1017 loss 4.9088 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 460/1017 loss 4.8345 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 465/1017 loss 4.9313 tok/s 80027 mem 11.25GB
+[baseline_maxb48] step 470/1017 loss 4.8377 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 475/1017 loss 4.8447 val 4.8605 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 480/1017 loss 4.8496 tok/s 80028 mem 11.25GB
+[baseline_maxb48] step 485/1017 loss 4.8642 tok/s 80029 mem 11.25GB
+[baseline_maxb48] step 490/1017 loss 4.8376 tok/s 80029 mem 11.25GB
+[baseline_maxb48] step 495/1017 loss 4.7463 tok/s 80030 mem 11.25GB
+[baseline_maxb48] step 500/1017 loss 4.8088 val 4.7881 tok/s 80031 mem 11.25GB
+[baseline_maxb48] step 505/1017 loss 4.7707 tok/s 80032 mem 11.25GB
+[baseline_maxb48] step 510/1017 loss 4.7210 tok/s 80033 mem 11.25GB
+[baseline_maxb48] step 515/1017 loss 4.8117 tok/s 80034 mem 11.25GB
+[baseline_maxb48] step 520/1017 loss 4.7248 tok/s 80035 mem 11.25GB
+[baseline_maxb48] step 525/1017 loss 4.6979 val 4.7328 tok/s 80036 mem 11.25GB
+[baseline_maxb48] step 530/1017 loss 4.7320 tok/s 80036 mem 11.25GB
+[baseline_maxb48] step 535/1017 loss 4.7470 tok/s 80011 mem 11.25GB
+[baseline_maxb48] step 540/1017 loss 4.7174 tok/s 79775 mem 11.25GB
+[baseline_maxb48] step 545/1017 loss 4.7212 tok/s 79779 mem 11.25GB
+[baseline_maxb48] step 550/1017 loss 4.6759 val 4.6773 tok/s 79773 mem 11.25GB
+[baseline_maxb48] step 555/1017 loss 4.6510 tok/s 79552 mem 11.25GB
+[baseline_maxb48] step 560/1017 loss 4.6397 tok/s 79464 mem 11.25GB
+[baseline_maxb48] step 565/1017 loss 4.5925 tok/s 79471 mem 11.25GB
+[baseline_maxb48] step 570/1017 loss 4.6658 tok/s 79478 mem 11.25GB
+[baseline_maxb48] step 575/1017 loss 4.6100 val 4.6213 tok/s 79484 mem 11.25GB
+[baseline_maxb48] step 580/1017 loss 4.6441 tok/s 79490 mem 11.25GB
+[baseline_maxb48] step 585/1017 loss 4.5904 tok/s 79496 mem 11.25GB
+[baseline_maxb48] step 590/1017 loss 4.5115 tok/s 79500 mem 11.25GB
+[baseline_maxb48] step 595/1017 loss 4.5626 tok/s 79504 mem 11.25GB
+[baseline_maxb48] step 600/1017 loss 4.5560 val 4.5489 tok/s 79508 mem 11.25GB
+[baseline_maxb48] step 605/1017 loss 4.5677 tok/s 79512 mem 11.25GB
+[baseline_maxb48] step 610/1017 loss 4.5301 tok/s 79518 mem 11.25GB
+[baseline_maxb48] step 615/1017 loss 4.5453 tok/s 79524 mem 11.25GB
+[baseline_maxb48] step 620/1017 loss 4.5346 tok/s 79530 mem 11.25GB
+[baseline_maxb48] step 625/1017 loss 4.4457 val 4.4901 tok/s 79533 mem 11.25GB
+[baseline_maxb48] step 630/1017 loss 4.4620 tok/s 79539 mem 11.25GB
+[baseline_maxb48] step 635/1017 loss 4.4783 tok/s 79544 mem 11.25GB
+[baseline_maxb48] step 640/1017 loss 4.4500 tok/s 79550 mem 11.25GB
+[baseline_maxb48] step 645/1017 loss 4.4888 tok/s 79554 mem 11.25GB
+[baseline_maxb48] step 650/1017 loss 4.3968 val 4.4477 tok/s 79560 mem 11.25GB
+[baseline_maxb48] step 655/1017 loss 4.4361 tok/s 79565 mem 11.25GB
+[baseline_maxb48] step 660/1017 loss 4.4393 tok/s 79569 mem 11.25GB
+[baseline_maxb48] step 665/1017 loss 4.3708 tok/s 79574 mem 11.25GB
+[baseline_maxb48] step 670/1017 loss 4.4085 tok/s 79578 mem 11.25GB
+[baseline_maxb48] step 675/1017 loss 4.4473 val 4.3940 tok/s 79583 mem 11.25GB
+[baseline_maxb48] step 680/1017 loss 4.3907 tok/s 79585 mem 11.25GB
+[baseline_maxb48] step 685/1017 loss 4.3859 tok/s 79588 mem 11.25GB
+[baseline_maxb48] step 690/1017 loss 4.4397 tok/s 79592 mem 11.25GB
+[baseline_maxb48] step 695/1017 loss 4.3706 tok/s 79596 mem 11.25GB
+[baseline_maxb48] step 700/1017 loss 4.3540 val 4.3498 tok/s 79599 mem 11.25GB
+[baseline_maxb48] step 705/1017 loss 4.3146 tok/s 79603 mem 11.25GB
+[baseline_maxb48] step 710/1017 loss 4.3238 tok/s 79608 mem 11.25GB
+[baseline_maxb48] step 715/1017 loss 4.3039 tok/s 79611 mem 11.25GB
+[baseline_maxb48] step 720/1017 loss 4.3907 tok/s 79615 mem 11.25GB
+[baseline_maxb48] step 725/1017 loss 4.3273 val 4.3081 tok/s 79620 mem 11.25GB
+[baseline_maxb48] step 730/1017 loss 4.3650 tok/s 79624 mem 11.25GB
+[baseline_maxb48] step 735/1017 loss 4.2663 tok/s 79627 mem 11.25GB
+[baseline_maxb48] step 740/1017 loss 4.3031 tok/s 79632 mem 11.25GB
+[baseline_maxb48] step 745/1017 loss 4.2766 tok/s 79636 mem 11.25GB
+[baseline_maxb48] step 750/1017 loss 4.2512 val 4.2760 tok/s 79640 mem 11.25GB
+[baseline_maxb48] step 755/1017 loss 4.4026 tok/s 79643 mem 11.25GB
+[baseline_maxb48] step 760/1017 loss 4.2935 tok/s 79646 mem 11.25GB
+[baseline_maxb48] step 765/1017 loss 4.2654 tok/s 79649 mem 11.25GB
+[baseline_maxb48] step 770/1017 loss 4.2639 tok/s 79652 mem 11.25GB
+[baseline_maxb48] step 775/1017 loss 4.2734 val 4.2465 tok/s 79656 mem 11.25GB
+[baseline_maxb48] step 780/1017 loss 4.2425 tok/s 79659 mem 11.25GB
+[baseline_maxb48] step 785/1017 loss 4.2336 tok/s 79661 mem 11.25GB
+[baseline_maxb48] step 790/1017 loss 4.2280 tok/s 79665 mem 11.25GB
+[baseline_maxb48] step 795/1017 loss 4.2328 tok/s 79668 mem 11.25GB
+[baseline_maxb48] step 800/1017 loss 4.1536 val 4.2198 tok/s 79672 mem 11.25GB
+[baseline_maxb48] step 805/1017 loss 4.2277 tok/s 79676 mem 11.25GB
+[baseline_maxb48] step 810/1017 loss 4.1965 tok/s 79678 mem 11.25GB
+[baseline_maxb48] step 815/1017 loss 4.1785 tok/s 79681 mem 11.25GB
+[baseline_maxb48] step 820/1017 loss 4.2285 tok/s 79683 mem 11.25GB
+[baseline_maxb48] step 825/1017 loss 4.2425 val 4.1908 tok/s 79685 mem 11.25GB
+[baseline_maxb48] step 830/1017 loss 4.2506 tok/s 79687 mem 11.25GB
+[baseline_maxb48] step 835/1017 loss 4.2147 tok/s 79689 mem 11.25GB
+[baseline_maxb48] step 840/1017 loss 4.1582 tok/s 79691 mem 11.25GB
+[baseline_maxb48] step 845/1017 loss 4.2306 tok/s 79693 mem 11.25GB
+[baseline_maxb48] step 850/1017 loss 4.2109 val 4.1745 tok/s 79696 mem 11.25GB
+[baseline_maxb48] step 855/1017 loss 4.2204 tok/s 79698 mem 11.25GB
+[baseline_maxb48] step 860/1017 loss 4.2109 tok/s 79700 mem 11.25GB
+[baseline_maxb48] step 865/1017 loss 4.2633 tok/s 79702 mem 11.25GB
+[baseline_maxb48] step 870/1017 loss 4.1226 tok/s 79704 mem 11.25GB
+[baseline_maxb48] step 875/1017 loss 4.1954 val 4.1556 tok/s 79707 mem 11.25GB
+[baseline_maxb48] step 880/1017 loss 4.2050 tok/s 79710 mem 11.25GB
+[baseline_maxb48] step 885/1017 loss 4.1900 tok/s 79712 mem 11.25GB
+[baseline_maxb48] step 890/1017 loss 4.1188 tok/s 79715 mem 11.25GB
+[baseline_maxb48] step 895/1017 loss 4.1424 tok/s 79718 mem 11.25GB
+[baseline_maxb48] step 900/1017 loss 4.1302 val 4.1379 tok/s 79720 mem 11.25GB
+[baseline_maxb48] step 905/1017 loss 4.1637 tok/s 79722 mem 11.25GB
+[baseline_maxb48] step 910/1017 loss 4.1551 tok/s 79724 mem 11.25GB
+[baseline_maxb48] step 915/1017 loss 4.1973 tok/s 79726 mem 11.25GB
+[baseline_maxb48] step 920/1017 loss 4.1349 tok/s 79729 mem 11.25GB
+[baseline_maxb48] step 925/1017 loss 4.1606 val 4.1279 tok/s 79730 mem 11.25GB
+[baseline_maxb48] step 930/1017 loss 4.1835 tok/s 79731 mem 11.25GB
+[baseline_maxb48] step 935/1017 loss 4.1949 tok/s 79734 mem 11.25GB
+[baseline_maxb48] step 940/1017 loss 4.1417 tok/s 79736 mem 11.25GB
+[baseline_maxb48] step 945/1017 loss 4.1621 tok/s 79738 mem 11.25GB
+[baseline_maxb48] step 950/1017 loss 4.0934 val 4.1150 tok/s 79741 mem 11.25GB
+[baseline_maxb48] step 955/1017 loss 4.1500 tok/s 79743 mem 11.25GB
+[baseline_maxb48] step 960/1017 loss 4.1296 tok/s 79746 mem 11.25GB
+[baseline_maxb48] step 965/1017 loss 4.0908 tok/s 79748 mem 11.25GB
+[baseline_maxb48] step 970/1017 loss 4.0317 tok/s 79749 mem 11.25GB
+[baseline_maxb48] step 975/1017 loss 4.1339 val 4.1052 tok/s 79751 mem 11.25GB
+[baseline_maxb48] step 980/1017 loss 4.1784 tok/s 79754 mem 11.25GB
+[baseline_maxb48] step 985/1017 loss 4.0594 tok/s 79756 mem 11.25GB
+[baseline_maxb48] step 990/1017 loss 4.1002 tok/s 79758 mem 11.25GB
+[baseline_maxb48] step 995/1017 loss 4.0516 tok/s 79760 mem 11.25GB
+[baseline_maxb48] step 1000/1017 loss 4.0968 val 4.0924 tok/s 79761 mem 11.25GB
+[baseline_maxb48] step 1005/1017 loss 4.1343 tok/s 79760 mem 11.25GB
+[baseline_maxb48] step 1010/1017 loss 4.0946 tok/s 79765 mem 11.25GB
+[baseline_maxb48] step 1015/1017 loss 4.1279 tok/s 79766 mem 11.25GB
+[baseline_maxb48] step 1017/1017 loss 4.1668 val 4.0897 tok/s 79767 mem 11.25GB
+[baseline_maxb48] DONE {"name": "baseline_maxb48", "mode": "baseline", "batch": 48, "seq": 1024, "h": 0.5, "lr": 0.0026, "ce_chunks": 1, "rev_backward": true, "exact_state": null, "params_m": 21.249792, "steps": 1017, "tokens": 49987584, "status": "ok", "final_train_loss": 4.124106931686401, "final_val_loss": 4.109182424232608, "tok_s_avg": 79766.51882033792, "tok_s_steady": 79744.9680188685, "train_time_s": 626.6737565994263, "peak_alloc_gb": 11.247678279876709, "peak_reserved_gb": 11.95703125}

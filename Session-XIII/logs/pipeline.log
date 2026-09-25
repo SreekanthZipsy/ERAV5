@@ -1,0 +1,15 @@
+best h: {'midpoint': 1.0, 'midpoint_a': 1.0, 'leapfrog': 1.0}
+>> train.py --mode midpoint --batch 16 --h 1.0 --name midpoint_b16
+>> train.py --mode euler --batch 16 --h 0.5 --name euler_b16
+>> train.py --mode midpoint_a --batch 16 --h 1.0 --name midpoint_a_b16
+>> train.py --mode leapfrog --batch 16 --h 1.0 --name leapfrog_b16
+best reversible variant: midpoint_a 4.003079203308606
+>> find_max_batch.py --mode baseline
+>> find_max_batch.py --mode baseline --chunked_ce
+>> find_max_batch.py --mode midpoint_a --h 1.0
+>> find_max_batch.py --mode midpoint_a --h 1.0 --chunked_ce
+>> depth_probe.py
+>> train.py --mode midpoint_a --batch 456 --h 1.0 --lr 6.00e-03 --ce_chunks 57 --warmup_frac 0.1 --eval_every 25 --log_every 5 --name midpoint_a_maxb456
+>> train.py --mode baseline --batch 48 --h 0.5 --lr 2.60e-03 --ce_chunks 1 --warmup_frac 0.1 --eval_every 25 --log_every 5 --name baseline_maxb48
+>> make_report.py
+PIPELINE DONE

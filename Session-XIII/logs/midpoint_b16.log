@@ -1,0 +1,125 @@
+[midpoint_b16] params=21.25M (non-emb 17.71M) steps=3051 tok/step=16384 lr=0.0015 h=1.0
+[midpoint_b16] step 25/3051 loss 7.6712 tok/s 42235 mem 1.92GB
+[midpoint_b16] step 50/3051 loss 6.9763 tok/s 48830 mem 1.92GB
+[midpoint_b16] step 75/3051 loss 6.6505 tok/s 51499 mem 1.92GB
+[midpoint_b16] step 100/3051 loss 6.3680 tok/s 52951 mem 1.92GB
+[midpoint_b16] step 125/3051 loss 6.3019 tok/s 53859 mem 1.92GB
+[midpoint_b16] step 150/3051 loss 6.1264 tok/s 54475 mem 1.92GB
+[midpoint_b16] step 175/3051 loss 6.1551 tok/s 54921 mem 1.92GB
+[midpoint_b16] step 200/3051 loss 6.0702 tok/s 55265 mem 1.92GB
+[midpoint_b16] step 225/3051 loss 5.9407 tok/s 55538 mem 1.92GB
+[midpoint_b16] step 250/3051 loss 5.8992 val 5.8947 tok/s 55758 mem 1.92GB
+[midpoint_b16] step 275/3051 loss 5.7566 tok/s 55937 mem 1.92GB
+[midpoint_b16] step 300/3051 loss 5.8524 tok/s 56090 mem 1.92GB
+[midpoint_b16] step 325/3051 loss 5.6819 tok/s 56218 mem 1.92GB
+[midpoint_b16] step 350/3051 loss 5.7003 tok/s 56329 mem 1.92GB
+[midpoint_b16] step 375/3051 loss 5.6898 tok/s 56424 mem 1.92GB
+[midpoint_b16] step 400/3051 loss 5.6324 tok/s 56502 mem 1.92GB
+[midpoint_b16] step 425/3051 loss 5.5270 tok/s 56575 mem 1.92GB
+[midpoint_b16] step 450/3051 loss 5.6053 tok/s 56643 mem 1.92GB
+[midpoint_b16] step 475/3051 loss 5.5619 tok/s 56703 mem 1.92GB
+[midpoint_b16] step 500/3051 loss 5.5620 val 5.5404 tok/s 56759 mem 1.92GB
+[midpoint_b16] step 525/3051 loss 5.5474 tok/s 56805 mem 1.92GB
+[midpoint_b16] step 550/3051 loss 5.3452 tok/s 56849 mem 1.92GB
+[midpoint_b16] step 575/3051 loss 5.4061 tok/s 56889 mem 1.92GB
+[midpoint_b16] step 600/3051 loss 5.3789 tok/s 56926 mem 1.92GB
+[midpoint_b16] step 625/3051 loss 5.3277 tok/s 56958 mem 1.92GB
+[midpoint_b16] step 650/3051 loss 5.3563 tok/s 56989 mem 1.92GB
+[midpoint_b16] step 675/3051 loss 5.3343 tok/s 57019 mem 1.92GB
+[midpoint_b16] step 700/3051 loss 5.3260 tok/s 57047 mem 1.92GB
+[midpoint_b16] step 725/3051 loss 5.2118 tok/s 57073 mem 1.92GB
+[midpoint_b16] step 750/3051 loss 5.3500 val 5.2760 tok/s 57099 mem 1.92GB
+[midpoint_b16] step 775/3051 loss 5.2429 tok/s 57119 mem 1.92GB
+[midpoint_b16] step 800/3051 loss 5.1983 tok/s 57142 mem 1.92GB
+[midpoint_b16] step 825/3051 loss 5.2339 tok/s 57163 mem 1.92GB
+[midpoint_b16] step 850/3051 loss 5.2970 tok/s 57181 mem 1.92GB
+[midpoint_b16] step 875/3051 loss 5.1358 tok/s 57197 mem 1.92GB
+[midpoint_b16] step 900/3051 loss 5.1867 tok/s 57213 mem 1.92GB
+[midpoint_b16] step 925/3051 loss 5.1195 tok/s 57229 mem 1.92GB
+[midpoint_b16] step 950/3051 loss 5.2780 tok/s 57245 mem 1.92GB
+[midpoint_b16] step 975/3051 loss 5.0405 tok/s 57261 mem 1.92GB
+[midpoint_b16] step 1000/3051 loss 5.0489 val 5.0757 tok/s 57275 mem 1.92GB
+[midpoint_b16] step 1025/3051 loss 5.0457 tok/s 57286 mem 1.92GB
+[midpoint_b16] step 1050/3051 loss 5.0110 tok/s 57299 mem 1.92GB
+[midpoint_b16] step 1075/3051 loss 4.8856 tok/s 57312 mem 1.92GB
+[midpoint_b16] step 1100/3051 loss 5.0018 tok/s 57323 mem 1.92GB
+[midpoint_b16] step 1125/3051 loss 5.0318 tok/s 57333 mem 1.92GB
+[midpoint_b16] step 1150/3051 loss 5.1188 tok/s 57343 mem 1.92GB
+[midpoint_b16] step 1175/3051 loss 4.8697 tok/s 57355 mem 1.92GB
+[midpoint_b16] step 1200/3051 loss 4.9313 tok/s 57365 mem 1.92GB
+[midpoint_b16] step 1225/3051 loss 4.8744 tok/s 57375 mem 1.92GB
+[midpoint_b16] step 1250/3051 loss 4.9655 val 4.9050 tok/s 57384 mem 1.92GB
+[midpoint_b16] step 1275/3051 loss 4.9239 tok/s 57392 mem 1.92GB
+[midpoint_b16] step 1300/3051 loss 4.8758 tok/s 57400 mem 1.92GB
+[midpoint_b16] step 1325/3051 loss 4.7881 tok/s 57407 mem 1.92GB
+[midpoint_b16] step 1350/3051 loss 4.7980 tok/s 57415 mem 1.92GB
+[midpoint_b16] step 1375/3051 loss 4.8154 tok/s 57421 mem 1.92GB
+[midpoint_b16] step 1400/3051 loss 4.6553 tok/s 57429 mem 1.92GB
+[midpoint_b16] step 1425/3051 loss 4.8433 tok/s 57437 mem 1.92GB
+[midpoint_b16] step 1450/3051 loss 4.8273 tok/s 57445 mem 1.92GB
+[midpoint_b16] step 1475/3051 loss 4.7537 tok/s 57451 mem 1.92GB
+[midpoint_b16] step 1500/3051 loss 4.7929 val 4.7475 tok/s 57458 mem 1.92GB
+[midpoint_b16] step 1525/3051 loss 4.7809 tok/s 57463 mem 1.92GB
+[midpoint_b16] step 1550/3051 loss 4.6906 tok/s 57469 mem 1.92GB
+[midpoint_b16] step 1575/3051 loss 4.6472 tok/s 57474 mem 1.92GB
+[midpoint_b16] step 1600/3051 loss 4.6530 tok/s 57479 mem 1.92GB
+[midpoint_b16] step 1625/3051 loss 4.6776 tok/s 57484 mem 1.92GB
+[midpoint_b16] step 1650/3051 loss 4.6227 tok/s 57490 mem 1.92GB
+[midpoint_b16] step 1675/3051 loss 4.6234 tok/s 57496 mem 1.92GB
+[midpoint_b16] step 1700/3051 loss 4.5099 tok/s 57501 mem 1.92GB
+[midpoint_b16] step 1725/3051 loss 4.5676 tok/s 57506 mem 1.92GB
+[midpoint_b16] step 1750/3051 loss 4.7064 val 4.5991 tok/s 57511 mem 1.92GB
+[midpoint_b16] step 1775/3051 loss 4.5413 tok/s 57517 mem 1.92GB
+[midpoint_b16] step 1800/3051 loss 4.5156 tok/s 57521 mem 1.92GB
+[midpoint_b16] step 1825/3051 loss 4.5380 tok/s 57524 mem 1.92GB
+[midpoint_b16] step 1850/3051 loss 4.5050 tok/s 57529 mem 1.92GB
+[midpoint_b16] step 1875/3051 loss 4.4978 tok/s 57533 mem 1.92GB
+[midpoint_b16] step 1900/3051 loss 4.4739 tok/s 57538 mem 1.92GB
+[midpoint_b16] step 1925/3051 loss 4.4391 tok/s 57542 mem 1.92GB
+[midpoint_b16] step 1950/3051 loss 4.5072 tok/s 57547 mem 1.92GB
+[midpoint_b16] step 1975/3051 loss 4.4530 tok/s 57551 mem 1.92GB
+[midpoint_b16] step 2000/3051 loss 4.4530 val 4.4645 tok/s 57554 mem 1.92GB
+[midpoint_b16] step 2025/3051 loss 4.4018 tok/s 57557 mem 1.92GB
+[midpoint_b16] step 2050/3051 loss 4.4337 tok/s 57560 mem 1.92GB
+[midpoint_b16] step 2075/3051 loss 4.4678 tok/s 57563 mem 1.92GB
+[midpoint_b16] step 2100/3051 loss 4.5268 tok/s 57566 mem 1.92GB
+[midpoint_b16] step 2125/3051 loss 4.4169 tok/s 57570 mem 1.92GB
+[midpoint_b16] step 2150/3051 loss 4.3882 tok/s 57574 mem 1.92GB
+[midpoint_b16] step 2175/3051 loss 4.3775 tok/s 57577 mem 1.92GB
+[midpoint_b16] step 2200/3051 loss 4.4951 tok/s 57581 mem 1.92GB
+[midpoint_b16] step 2225/3051 loss 4.3143 tok/s 57584 mem 1.92GB
+[midpoint_b16] step 2250/3051 loss 4.4176 val 4.3632 tok/s 57587 mem 1.92GB
+[midpoint_b16] step 2275/3051 loss 4.3498 tok/s 57588 mem 1.92GB
+[midpoint_b16] step 2300/3051 loss 4.3744 tok/s 57591 mem 1.92GB
+[midpoint_b16] step 2325/3051 loss 4.3367 tok/s 57593 mem 1.92GB
+[midpoint_b16] step 2350/3051 loss 4.2780 tok/s 57596 mem 1.92GB
+[midpoint_b16] step 2375/3051 loss 4.3046 tok/s 57598 mem 1.92GB
+[midpoint_b16] step 2400/3051 loss 4.2305 tok/s 57601 mem 1.92GB
+[midpoint_b16] step 2425/3051 loss 4.2438 tok/s 57604 mem 1.92GB
+[midpoint_b16] step 2450/3051 loss 4.3462 tok/s 57607 mem 1.92GB
+[midpoint_b16] step 2475/3051 loss 4.3635 tok/s 57609 mem 1.92GB
+[midpoint_b16] step 2500/3051 loss 4.2350 val 4.2858 tok/s 57612 mem 1.92GB
+[midpoint_b16] step 2525/3051 loss 4.2619 tok/s 57614 mem 1.92GB
+[midpoint_b16] step 2550/3051 loss 4.3651 tok/s 57616 mem 1.92GB
+[midpoint_b16] step 2575/3051 loss 4.1966 tok/s 57618 mem 1.92GB
+[midpoint_b16] step 2600/3051 loss 4.2987 tok/s 57620 mem 1.92GB
+[midpoint_b16] step 2625/3051 loss 4.3326 tok/s 57623 mem 1.92GB
+[midpoint_b16] step 2650/3051 loss 4.1362 tok/s 57625 mem 1.92GB
+[midpoint_b16] step 2675/3051 loss 4.3260 tok/s 57627 mem 1.92GB
+[midpoint_b16] step 2700/3051 loss 4.2264 tok/s 57629 mem 1.92GB
+[midpoint_b16] step 2725/3051 loss 4.1654 tok/s 57631 mem 1.92GB
+[midpoint_b16] step 2750/3051 loss 4.2155 val 4.2329 tok/s 57633 mem 1.92GB
+[midpoint_b16] step 2775/3051 loss 4.2674 tok/s 57635 mem 1.92GB
+[midpoint_b16] step 2800/3051 loss 4.2444 tok/s 57636 mem 1.92GB
+[midpoint_b16] step 2825/3051 loss 4.3241 tok/s 57638 mem 1.92GB
+[midpoint_b16] step 2850/3051 loss 4.1402 tok/s 57640 mem 1.92GB
+[midpoint_b16] step 2875/3051 loss 4.2587 tok/s 57642 mem 1.92GB
+[midpoint_b16] step 2900/3051 loss 4.1872 tok/s 57644 mem 1.92GB
+[midpoint_b16] step 2925/3051 loss 4.1801 tok/s 57646 mem 1.92GB
+[midpoint_b16] step 2950/3051 loss 4.1738 tok/s 57648 mem 1.92GB
+[midpoint_b16] step 2975/3051 loss 4.1572 tok/s 57650 mem 1.92GB
+[midpoint_b16] step 3000/3051 loss 4.2064 val 4.2025 tok/s 57651 mem 1.92GB
+[midpoint_b16] step 3025/3051 loss 4.2246 tok/s 57652 mem 1.92GB
+[midpoint_b16] step 3050/3051 loss 4.1572 tok/s 57654 mem 1.92GB
+[midpoint_b16] step 3051/3051 loss 4.3229 val 4.1984 tok/s 57654 mem 1.92GB
+[midpoint_b16] DONE {"name": "midpoint_b16", "mode": "midpoint", "batch": 16, "seq": 1024, "h": 1.0, "lr": 0.0015, "ce_chunks": 1, "rev_backward": true, "exact_state": true, "params_m": 21.249792, "steps": 3051, "tokens": 49987584, "status": "ok", "final_train_loss": 4.21472954750061, "final_val_loss": 4.21737235491393, "tok_s_avg": 57653.77824936188, "tok_s_steady": 57827.88596299252, "train_time_s": 867.0304968357086, "peak_alloc_gb": 1.917346477508545, "peak_reserved_gb": 2.248046875}

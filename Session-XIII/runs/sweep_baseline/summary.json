@@ -1,0 +1,22 @@
+{
+  "name": "sweep_baseline",
+  "mode": "baseline",
+  "batch": 16,
+  "seq": 1024,
+  "h": 0.5,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "params_m": 21.249792,
+  "steps": 305,
+  "tokens": 4997120,
+  "status": "ok",
+  "final_train_loss": 6.01767635345459,
+  "final_val_loss": 6.113688578371142,
+  "tok_s_avg": 78389.00344540837,
+  "tok_s_steady": 78671.08976958407,
+  "train_time_s": 63.74771690368652,
+  "peak_alloc_gb": 3.949582576751709,
+  "peak_reserved_gb": 4.080078125,
+  "recon_err": []
+}

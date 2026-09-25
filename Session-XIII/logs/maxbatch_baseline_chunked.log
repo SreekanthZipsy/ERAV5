@@ -1,0 +1,10 @@
+baseline+chunkedCE 8 2.39GB 75688 tok/s
+baseline+chunkedCE 16 3.46GB 75284 tok/s
+baseline+chunkedCE 32 5.64GB 77377 tok/s
+baseline+chunkedCE 64 10.01GB 78437 tok/s
+baseline+chunkedCE 128 OOM
+baseline+chunkedCE 96 14.29GB 77929 tok/s
+baseline+chunkedCE 112 OOM
+baseline+chunkedCE 104 OOM
+baseline+chunkedCE 100 OOM
+baseline+chunkedCE: max batch 96 (OOM at 100)

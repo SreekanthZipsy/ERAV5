@@ -1,0 +1,8 @@
+baseline 8 2.39GB 75607 tok/s
+baseline 16 4.08GB 79002 tok/s
+baseline 32 8.01GB 81633 tok/s
+baseline 64 OOM
+baseline 48 11.96GB 82409 tok/s
+baseline 56 13.92GB 83155 tok/s
+baseline 60 OOM
+baseline: max batch 56 (OOM at 60)

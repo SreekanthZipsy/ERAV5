@@ -1,0 +1,8 @@
+{
+  "best_h": {
+    "midpoint": 1.0,
+    "midpoint_a": 1.0,
+    "leapfrog": 1.0
+  },
+  "best_mode": "midpoint_a"
+}

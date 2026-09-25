@@ -1,0 +1,10 @@
+midpoint_a 8 1.16GB 54942 tok/s
+midpoint_a 16 2.18GB 57644 tok/s
+midpoint_a 32 4.21GB 58435 tok/s
+midpoint_a 64 8.30GB 58888 tok/s
+midpoint_a 128 OOM
+midpoint_a 96 12.38GB 58387 tok/s
+midpoint_a 112 14.42GB 58202 tok/s
+midpoint_a 120 OOM
+midpoint_a 116 OOM
+midpoint_a: max batch 112 (OOM at 116)

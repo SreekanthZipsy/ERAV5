@@ -1,0 +1,22 @@
+{
+  "name": "baseline_b16",
+  "mode": "baseline",
+  "batch": 16,
+  "seq": 1024,
+  "h": 0.5,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "params_m": 21.249792,
+  "steps": 3051,
+  "tokens": 49987584,
+  "status": "ok",
+  "final_train_loss": 3.986760954062144,
+  "final_val_loss": 3.9909622825560023,
+  "tok_s_avg": 77305.71040262964,
+  "tok_s_steady": 77312.60565764246,
+  "train_time_s": 646.6221413612366,
+  "peak_alloc_gb": 3.949582576751709,
+  "peak_reserved_gb": 4.080078125,
+  "recon_err": []
+}

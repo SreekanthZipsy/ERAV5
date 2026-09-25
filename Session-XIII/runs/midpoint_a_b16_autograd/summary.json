@@ -1,0 +1,23 @@
+{
+  "name": "midpoint_a_b16_autograd",
+  "mode": "midpoint_a",
+  "batch": 16,
+  "seq": 1024,
+  "h": 1.0,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": false,
+  "exact_state": false,
+  "params_m": 21.249792,
+  "steps": 3051,
+  "tokens": 49987584,
+  "status": "ok",
+  "final_train_loss": 4.007340172926585,
+  "final_val_loss": 4.011846569717908,
+  "tok_s_avg": 71409.03114257343,
+  "tok_s_steady": 71433.43836207634,
+  "train_time_s": 700.0176756381989,
+  "peak_alloc_gb": 3.943112850189209,
+  "peak_reserved_gb": 4.234375,
+  "recon_err": []
+}

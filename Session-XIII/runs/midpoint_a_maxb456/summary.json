@@ -1,0 +1,44 @@
+{
+  "name": "midpoint_a_maxb456",
+  "mode": "midpoint_a",
+  "batch": 456,
+  "seq": 1024,
+  "h": 1.0,
+  "lr": 0.006,
+  "ce_chunks": 57,
+  "rev_backward": true,
+  "exact_state": false,
+  "params_m": 21.249792,
+  "steps": 107,
+  "tokens": 49963008,
+  "status": "ok",
+  "final_train_loss": 6.381184816360474,
+  "final_val_loss": 6.3820308388256635,
+  "tok_s_avg": 55552.63009942461,
+  "tok_s_steady": 55442.7800343218,
+  "train_time_s": 899.3815038204193,
+  "peak_alloc_gb": 13.071946144104004,
+  "peak_reserved_gb": 14.345703125,
+  "recon_err": [
+    [
+      0,
+      0.0054398346692323685
+    ],
+    [
+      25,
+      2161.987548828125
+    ],
+    [
+      50,
+      1640.6650390625
+    ],
+    [
+      75,
+      1951.626708984375
+    ],
+    [
+      100,
+      1127.4970703125
+    ]
+  ]
+}

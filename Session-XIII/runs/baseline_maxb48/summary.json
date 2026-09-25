@@ -1,0 +1,23 @@
+{
+  "name": "baseline_maxb48",
+  "mode": "baseline",
+  "batch": 48,
+  "seq": 1024,
+  "h": 0.5,
+  "lr": 0.0026,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "exact_state": null,
+  "params_m": 21.249792,
+  "steps": 1017,
+  "tokens": 49987584,
+  "status": "ok",
+  "final_train_loss": 4.124106931686401,
+  "final_val_loss": 4.109182424232608,
+  "tok_s_avg": 79766.51882033792,
+  "tok_s_steady": 79744.9680188685,
+  "train_time_s": 626.6737565994263,
+  "peak_alloc_gb": 11.247678279876709,
+  "peak_reserved_gb": 11.95703125,
+  "recon_err": []
+}

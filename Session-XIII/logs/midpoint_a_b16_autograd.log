@@ -1,0 +1,125 @@
+[midpoint_a_b16_autograd] params=21.25M (non-emb 17.71M) steps=3051 tok/step=16384 lr=0.0015 h=1.0
+[midpoint_a_b16_autograd] step 25/3051 loss 7.6932 tok/s 68296 mem 3.94GB
+[midpoint_a_b16_autograd] step 50/3051 loss 6.9901 tok/s 69974 mem 3.94GB
+[midpoint_a_b16_autograd] step 75/3051 loss 6.6499 tok/s 70497 mem 3.94GB
+[midpoint_a_b16_autograd] step 100/3051 loss 6.3521 tok/s 70776 mem 3.94GB
+[midpoint_a_b16_autograd] step 125/3051 loss 6.2794 tok/s 70919 mem 3.94GB
+[midpoint_a_b16_autograd] step 150/3051 loss 6.0816 tok/s 71007 mem 3.94GB
+[midpoint_a_b16_autograd] step 175/3051 loss 6.0968 tok/s 71066 mem 3.94GB
+[midpoint_a_b16_autograd] step 200/3051 loss 6.0132 tok/s 71109 mem 3.94GB
+[midpoint_a_b16_autograd] step 225/3051 loss 5.8685 tok/s 71141 mem 3.94GB
+[midpoint_a_b16_autograd] step 250/3051 loss 5.8142 val 5.8019 tok/s 71161 mem 3.94GB
+[midpoint_a_b16_autograd] step 275/3051 loss 5.6551 tok/s 71188 mem 3.94GB
+[midpoint_a_b16_autograd] step 300/3051 loss 5.7343 tok/s 71205 mem 3.94GB
+[midpoint_a_b16_autograd] step 325/3051 loss 5.5415 tok/s 71214 mem 3.94GB
+[midpoint_a_b16_autograd] step 350/3051 loss 5.5790 tok/s 71229 mem 3.94GB
+[midpoint_a_b16_autograd] step 375/3051 loss 5.5524 tok/s 71246 mem 3.94GB
+[midpoint_a_b16_autograd] step 400/3051 loss 5.4851 tok/s 71260 mem 3.94GB
+[midpoint_a_b16_autograd] step 425/3051 loss 5.4137 tok/s 71267 mem 3.94GB
+[midpoint_a_b16_autograd] step 450/3051 loss 5.4920 tok/s 71272 mem 3.94GB
+[midpoint_a_b16_autograd] step 475/3051 loss 5.4446 tok/s 71272 mem 3.94GB
+[midpoint_a_b16_autograd] step 500/3051 loss 5.4456 val 5.4248 tok/s 71277 mem 3.94GB
+[midpoint_a_b16_autograd] step 525/3051 loss 5.4162 tok/s 71284 mem 3.94GB
+[midpoint_a_b16_autograd] step 550/3051 loss 5.2218 tok/s 71285 mem 3.94GB
+[midpoint_a_b16_autograd] step 575/3051 loss 5.2845 tok/s 71296 mem 3.94GB
+[midpoint_a_b16_autograd] step 600/3051 loss 5.2591 tok/s 71297 mem 3.94GB
+[midpoint_a_b16_autograd] step 625/3051 loss 5.2152 tok/s 71300 mem 3.94GB
+[midpoint_a_b16_autograd] step 650/3051 loss 5.2403 tok/s 71300 mem 3.94GB
+[midpoint_a_b16_autograd] step 675/3051 loss 5.1982 tok/s 71303 mem 3.94GB
+[midpoint_a_b16_autograd] step 700/3051 loss 5.1922 tok/s 71304 mem 3.94GB
+[midpoint_a_b16_autograd] step 725/3051 loss 5.0785 tok/s 71308 mem 3.94GB
+[midpoint_a_b16_autograd] step 750/3051 loss 5.1955 val 5.1203 tok/s 71313 mem 3.94GB
+[midpoint_a_b16_autograd] step 775/3051 loss 5.0799 tok/s 71314 mem 3.94GB
+[midpoint_a_b16_autograd] step 800/3051 loss 5.0264 tok/s 71323 mem 3.94GB
+[midpoint_a_b16_autograd] step 825/3051 loss 5.0655 tok/s 71327 mem 3.94GB
+[midpoint_a_b16_autograd] step 850/3051 loss 5.0982 tok/s 71329 mem 3.94GB
+[midpoint_a_b16_autograd] step 875/3051 loss 4.9499 tok/s 71333 mem 3.94GB
+[midpoint_a_b16_autograd] step 900/3051 loss 5.0099 tok/s 71339 mem 3.94GB
+[midpoint_a_b16_autograd] step 925/3051 loss 4.9431 tok/s 71340 mem 3.94GB
+[midpoint_a_b16_autograd] step 950/3051 loss 5.1283 tok/s 71345 mem 3.94GB
+[midpoint_a_b16_autograd] step 975/3051 loss 4.8547 tok/s 71347 mem 3.94GB
+[midpoint_a_b16_autograd] step 1000/3051 loss 4.8690 val 4.8843 tok/s 71349 mem 3.94GB
+[midpoint_a_b16_autograd] step 1025/3051 loss 4.8474 tok/s 71350 mem 3.94GB
+[midpoint_a_b16_autograd] step 1050/3051 loss 4.8165 tok/s 71351 mem 3.94GB
+[midpoint_a_b16_autograd] step 1075/3051 loss 4.7039 tok/s 71352 mem 3.94GB
+[midpoint_a_b16_autograd] step 1100/3051 loss 4.8120 tok/s 71356 mem 3.94GB
+[midpoint_a_b16_autograd] step 1125/3051 loss 4.8325 tok/s 71360 mem 3.94GB
+[midpoint_a_b16_autograd] step 1150/3051 loss 4.9143 tok/s 71361 mem 3.94GB
+[midpoint_a_b16_autograd] step 1175/3051 loss 4.6603 tok/s 71364 mem 3.94GB
+[midpoint_a_b16_autograd] step 1200/3051 loss 4.7179 tok/s 71368 mem 3.94GB
+[midpoint_a_b16_autograd] step 1225/3051 loss 4.6592 tok/s 71370 mem 3.94GB
+[midpoint_a_b16_autograd] step 1250/3051 loss 4.7630 val 4.6966 tok/s 71374 mem 3.94GB
+[midpoint_a_b16_autograd] step 1275/3051 loss 4.7103 tok/s 71376 mem 3.94GB
+[midpoint_a_b16_autograd] step 1300/3051 loss 4.6595 tok/s 71376 mem 3.94GB
+[midpoint_a_b16_autograd] step 1325/3051 loss 4.5649 tok/s 71377 mem 3.94GB
+[midpoint_a_b16_autograd] step 1350/3051 loss 4.5879 tok/s 71381 mem 3.94GB
+[midpoint_a_b16_autograd] step 1375/3051 loss 4.6044 tok/s 71383 mem 3.94GB
+[midpoint_a_b16_autograd] step 1400/3051 loss 4.4206 tok/s 71384 mem 3.94GB
+[midpoint_a_b16_autograd] step 1425/3051 loss 4.5902 tok/s 71386 mem 3.94GB
+[midpoint_a_b16_autograd] step 1450/3051 loss 4.6216 tok/s 71389 mem 3.94GB
+[midpoint_a_b16_autograd] step 1475/3051 loss 4.5381 tok/s 71394 mem 3.94GB
+[midpoint_a_b16_autograd] step 1500/3051 loss 4.5398 val 4.5007 tok/s 71395 mem 3.94GB
+[midpoint_a_b16_autograd] step 1525/3051 loss 4.5051 tok/s 71395 mem 3.94GB
+[midpoint_a_b16_autograd] step 1550/3051 loss 4.4327 tok/s 71396 mem 3.94GB
+[midpoint_a_b16_autograd] step 1575/3051 loss 4.4230 tok/s 71397 mem 3.94GB
+[midpoint_a_b16_autograd] step 1600/3051 loss 4.4168 tok/s 71399 mem 3.94GB
+[midpoint_a_b16_autograd] step 1625/3051 loss 4.4287 tok/s 71399 mem 3.94GB
+[midpoint_a_b16_autograd] step 1650/3051 loss 4.3482 tok/s 71400 mem 3.94GB
+[midpoint_a_b16_autograd] step 1675/3051 loss 4.3394 tok/s 71401 mem 3.94GB
+[midpoint_a_b16_autograd] step 1700/3051 loss 4.2241 tok/s 71402 mem 3.94GB
+[midpoint_a_b16_autograd] step 1725/3051 loss 4.2874 tok/s 71402 mem 3.94GB
+[midpoint_a_b16_autograd] step 1750/3051 loss 4.4399 val 4.3406 tok/s 71402 mem 3.94GB
+[midpoint_a_b16_autograd] step 1775/3051 loss 4.2890 tok/s 71401 mem 3.94GB
+[midpoint_a_b16_autograd] step 1800/3051 loss 4.2306 tok/s 71402 mem 3.94GB
+[midpoint_a_b16_autograd] step 1825/3051 loss 4.2598 tok/s 71403 mem 3.94GB
+[midpoint_a_b16_autograd] step 1850/3051 loss 4.2533 tok/s 71404 mem 3.94GB
+[midpoint_a_b16_autograd] step 1875/3051 loss 4.2567 tok/s 71405 mem 3.94GB
+[midpoint_a_b16_autograd] step 1900/3051 loss 4.2100 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 1925/3051 loss 4.1846 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 1950/3051 loss 4.2653 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 1975/3051 loss 4.2107 tok/s 71407 mem 3.94GB
+[midpoint_a_b16_autograd] step 2000/3051 loss 4.2053 val 4.2214 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2025/3051 loss 4.1568 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2050/3051 loss 4.1714 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2075/3051 loss 4.2614 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2100/3051 loss 4.2958 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2125/3051 loss 4.1362 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2150/3051 loss 4.1484 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2175/3051 loss 4.1668 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2200/3051 loss 4.2790 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2225/3051 loss 4.0675 tok/s 71407 mem 3.94GB
+[midpoint_a_b16_autograd] step 2250/3051 loss 4.1560 val 4.1318 tok/s 71407 mem 3.94GB
+[midpoint_a_b16_autograd] step 2275/3051 loss 4.1264 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 2300/3051 loss 4.1535 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 2325/3051 loss 4.1178 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 2350/3051 loss 4.0412 tok/s 71406 mem 3.94GB
+[midpoint_a_b16_autograd] step 2375/3051 loss 4.0591 tok/s 71407 mem 3.94GB
+[midpoint_a_b16_autograd] step 2400/3051 loss 4.0106 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2425/3051 loss 4.0258 tok/s 71407 mem 3.94GB
+[midpoint_a_b16_autograd] step 2450/3051 loss 4.1236 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2475/3051 loss 4.1527 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2500/3051 loss 4.0171 val 4.0673 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2525/3051 loss 4.0582 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2550/3051 loss 4.1266 tok/s 71410 mem 3.94GB
+[midpoint_a_b16_autograd] step 2575/3051 loss 3.9618 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2600/3051 loss 4.0963 tok/s 71410 mem 3.94GB
+[midpoint_a_b16_autograd] step 2625/3051 loss 4.1105 tok/s 71410 mem 3.94GB
+[midpoint_a_b16_autograd] step 2650/3051 loss 3.9189 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2675/3051 loss 4.1202 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2700/3051 loss 4.0325 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2725/3051 loss 3.9550 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2750/3051 loss 3.9912 val 4.0255 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2775/3051 loss 4.0810 tok/s 71411 mem 3.94GB
+[midpoint_a_b16_autograd] step 2800/3051 loss 4.0367 tok/s 71410 mem 3.94GB
+[midpoint_a_b16_autograd] step 2825/3051 loss 4.1342 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2850/3051 loss 3.9378 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2875/3051 loss 4.0464 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 2900/3051 loss 3.9517 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2925/3051 loss 3.9715 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2950/3051 loss 3.9700 tok/s 71408 mem 3.94GB
+[midpoint_a_b16_autograd] step 2975/3051 loss 3.9626 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 3000/3051 loss 4.0196 val 3.9961 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 3025/3051 loss 4.0093 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 3050/3051 loss 3.9332 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] step 3051/3051 loss 4.1151 val 3.9946 tok/s 71409 mem 3.94GB
+[midpoint_a_b16_autograd] DONE {"name": "midpoint_a_b16_autograd", "mode": "midpoint_a", "batch": 16, "seq": 1024, "h": 1.0, "lr": 0.0015, "ce_chunks": 1, "rev_backward": false, "exact_state": false, "params_m": 21.249792, "steps": 3051, "tokens": 49987584, "status": "ok", "final_train_loss": 4.007340172926585, "final_val_loss": 4.011846569717908, "tok_s_avg": 71409.03114257343, "tok_s_steady": 71433.43836207634, "train_time_s": 700.0176756381989, "peak_alloc_gb": 3.943112850189209, "peak_reserved_gb": 4.234375}

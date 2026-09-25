@@ -1,0 +1,40 @@
+{
+  "name": "sweep_euler",
+  "mode": "euler",
+  "batch": 16,
+  "seq": 1024,
+  "h": 0.5,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "exact_state": true,
+  "params_m": 21.249792,
+  "steps": 305,
+  "tokens": 4997120,
+  "status": "ok",
+  "final_train_loss": 6.050088405609131,
+  "final_val_loss": 6.143018347318055,
+  "tok_s_avg": 57089.32141303351,
+  "tok_s_steady": 58703.23103447947,
+  "train_time_s": 87.53160619735718,
+  "peak_alloc_gb": 1.916675090789795,
+  "peak_reserved_gb": 2.248046875,
+  "recon_err": [
+    [
+      0,
+      7.537858670580988e-10
+    ],
+    [
+      100,
+      7.110749211669543e-10
+    ],
+    [
+      200,
+      6.182076517369239e-10
+    ],
+    [
+      300,
+      5.943744940672957e-10
+    ]
+  ]
+}

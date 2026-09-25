@@ -1,0 +1,14 @@
+leapfrog+chunkedCE 8 1.30GB 56781 tok/s
+leapfrog+chunkedCE 16 1.54GB 55794 tok/s
+leapfrog+chunkedCE 32 1.58GB 57395 tok/s
+leapfrog+chunkedCE 64 2.85GB 57992 tok/s
+leapfrog+chunkedCE 128 5.39GB 57828 tok/s
+leapfrog+chunkedCE 256 10.25GB 57993 tok/s
+leapfrog+chunkedCE 512 OOM
+leapfrog+chunkedCE 384 14.33GB 56738 tok/s
+leapfrog+chunkedCE 448 OOM
+leapfrog+chunkedCE 416 OOM
+leapfrog+chunkedCE 400 14.34GB 56072 tok/s
+leapfrog+chunkedCE 408 14.33GB 54801 tok/s
+leapfrog+chunkedCE 412 14.42GB 54242 tok/s
+leapfrog+chunkedCE: max batch 412 (OOM at 416)

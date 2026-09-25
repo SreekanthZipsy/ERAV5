@@ -1,0 +1,37 @@
+[midpoint_a_maxb456] params=21.25M (non-emb 17.71M) steps=107 tok/step=466944 lr=0.006 h=1.0
+[W924 08:19:04.780863261 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 8192000, total: 15637086208).
+[W924 08:19:12.630787031 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 1900544, total: 15637086208).
+[midpoint_a_maxb456] step 5/107 loss 7.5458 tok/s 54609 mem 13.07GB
+[midpoint_a_maxb456] step 10/107 loss 7.3596 tok/s 55282 mem 13.07GB
+[midpoint_a_maxb456] step 15/107 loss 7.2499 tok/s 55484 mem 13.07GB
+[midpoint_a_maxb456] step 20/107 loss 7.0969 tok/s 55606 mem 13.07GB
+[midpoint_a_maxb456] step 25/107 loss 7.0052 val 6.9542 tok/s 55665 mem 13.07GB
+[W924 08:22:33.764243697 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[W924 08:22:36.039575336 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 1900544, total: 15637086208).
+[W924 08:22:37.688857551 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20774912, total: 15637086208).
+[W924 08:22:42.160581547 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[W924 08:22:44.102275384 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 20774912, total: 15637086208).
+[midpoint_a_maxb456] step 30/107 loss 6.8610 tok/s 55614 mem 13.07GB
+[midpoint_a_maxb456] step 35/107 loss 6.8001 tok/s 55638 mem 13.07GB
+[midpoint_a_maxb456] step 40/107 loss 6.7762 tok/s 55658 mem 13.07GB
+[midpoint_a_maxb456] step 45/107 loss 6.7391 tok/s 55669 mem 13.07GB
+[midpoint_a_maxb456] step 50/107 loss 6.6985 val 6.6868 tok/s 55678 mem 13.07GB
+[W924 08:26:12.215425295 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[midpoint_a_maxb456] step 55/107 loss 6.6649 tok/s 55669 mem 13.07GB
+[midpoint_a_maxb456] step 60/107 loss 6.6190 tok/s 55668 mem 13.07GB
+[midpoint_a_maxb456] step 65/107 loss 6.5894 tok/s 55666 mem 13.07GB
+[midpoint_a_maxb456] step 70/107 loss 6.5589 tok/s 55660 mem 13.07GB
+[midpoint_a_maxb456] step 75/107 loss 6.5254 val 6.5125 tok/s 55653 mem 13.07GB
+[W924 08:29:33.827148750 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[W924 08:29:42.371653475 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[W924 08:29:51.039600799 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[midpoint_a_maxb456] step 80/107 loss 6.4904 tok/s 55610 mem 13.07GB
+[midpoint_a_maxb456] step 85/107 loss 6.4692 tok/s 55604 mem 13.07GB
+[midpoint_a_maxb456] step 90/107 loss 6.4362 tok/s 55595 mem 13.07GB
+[midpoint_a_maxb456] step 95/107 loss 6.4127 tok/s 55587 mem 13.07GB
+[midpoint_a_maxb456] step 100/107 loss 6.4016 val 6.3877 tok/s 55577 mem 13.07GB
+[W924 08:33:04.962395632 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[W924 08:33:13.550158306 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16580608, total: 15637086208).
+[midpoint_a_maxb456] step 105/107 loss 6.3763 tok/s 55556 mem 13.07GB
+[midpoint_a_maxb456] step 107/107 loss 6.3861 val 6.3681 tok/s 55553 mem 13.07GB
+[midpoint_a_maxb456] DONE {"name": "midpoint_a_maxb456", "mode": "midpoint_a", "batch": 456, "seq": 1024, "h": 1.0, "lr": 0.006, "ce_chunks": 57, "rev_backward": true, "exact_state": false, "params_m": 21.249792, "steps": 107, "tokens": 49963008, "status": "ok", "final_train_loss": 6.381184816360474, "final_val_loss": 6.3820308388256635, "tok_s_avg": 55552.63009942461, "tok_s_steady": 55442.7800343218, "train_time_s": 899.3815038204193, "peak_alloc_gb": 13.071946144104004, "peak_reserved_gb": 14.345703125}

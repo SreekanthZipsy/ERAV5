@@ -1,0 +1,40 @@
+{
+  "name": "sweep_midpoint_h0.25",
+  "mode": "midpoint",
+  "batch": 16,
+  "seq": 1024,
+  "h": 0.25,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "exact_state": true,
+  "params_m": 21.249792,
+  "steps": 305,
+  "tokens": 4997120,
+  "status": "ok",
+  "final_train_loss": 6.305780410766602,
+  "final_val_loss": 6.379009778382348,
+  "tok_s_avg": 56027.90297338744,
+  "tok_s_steady": 58403.57573972527,
+  "train_time_s": 89.18984532356262,
+  "peak_alloc_gb": 1.917346477508545,
+  "peak_reserved_gb": 2.248046875,
+  "recon_err": [
+    [
+      0,
+      7.537858670580988e-10
+    ],
+    [
+      100,
+      6.698682164518743e-10
+    ],
+    [
+      200,
+      6.395676210857459e-10
+    ],
+    [
+      300,
+      6.047694012245586e-10
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "sweep_leapfrog_h1.0",
+  "mode": "leapfrog",
+  "batch": 16,
+  "seq": 1024,
+  "h": 1.0,
+  "lr": 0.0015,
+  "ce_chunks": 1,
+  "rev_backward": true,
+  "exact_state": true,
+  "params_m": 21.249792,
+  "steps": 305,
+  "tokens": 4997120,
+  "status": "ok",
+  "final_train_loss": 5.991533279418945,
+  "final_val_loss": 6.079631750700904,
+  "tok_s_avg": 54786.486602690464,
+  "tok_s_steady": 57335.5706785944,
+  "train_time_s": 91.21081328392029,
+  "peak_alloc_gb": 1.917346477508545,
+  "peak_reserved_gb": 2.248046875,
+  "recon_err": [
+    [
+      0,
+      7.537858670580988e-10
+    ],
+    [
+      100,
+      6.254419204765327e-10
+    ],
+    [
+      200,
+      5.950389625475339e-10
+    ],
+    [
+      300,
+      5.061672192496758e-10
+    ]
+  ]
+}
